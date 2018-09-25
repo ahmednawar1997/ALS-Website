@@ -1,0 +1,259 @@
+    html, body {
+        margin: 0;
+        height: 100%;
+    }
+    html, body { min-height: 100%; }
+    a {text-decoration: none;}
+
+    body{
+        color:white;
+        background-color: #ced5e0;
+        overflow-x: hidden;
+        font-family: 'Actor','Arial';
+    }
+    .container-fluid{
+        padding:0;
+        height: 100%;
+        min-height: 100%;
+    }
+    #landingPage{
+        text-align: center;
+        padding: 20vh 0;
+
+        background-image: url("../resources/images/schoolCampus.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+
+    }
+    #landingPage button{
+        background-color: transparent;
+        border-color: white;
+        border-width: medium;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+    #landingPage a{
+        background-color: transparent;
+        border-color: white;
+        border-width: medium;
+        font-weight: bold;
+        color: white;
+    }
+    #landingPage h1{
+        font-family: Century Schoolbook;
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    #landingPage h4{
+        font-family: Century Schoolbook;
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+    .paddingDiv{
+        height: inherit ;
+    }
+    #landingPage hr{
+        width:25%;
+        border-top: 2px solid #eee;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+    .vision{
+        background-color: #df9f9f;
+    }
+
+    .paddingDiv .row{
+        height: 50%;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .menuContainer{
+        height: 100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        vertical-align: middle;
+        /* line-height: 300px; */
+
+        font-size: 40px;
+        color:white;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+
+    .menuContainer p{
+        position: relative;
+        top: -30px;
+    }
+
+    .buttonHeading{
+        font-weight: bold;
+        position: absolute;
+        height: 2em;
+        width: 100%;
+        top: 50%;
+        text-align: center;
+        height: 2em !important;
+    }
+    .container-fluid .paddingDiv .row{
+        overflow: hidden;
+    }
+    .menuContainer:hover{
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        font-size: 31px;
+        cursor: pointer;
+    }
+    .hiddenOverflow{
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .scrollButton {
+        margin:auto;
+        background-color: White;
+        border: none;
+        color: Black;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 90%;
+        margin-top: 20px;
+        padding-bottom: 0%;
+        font-size: 25px;
+
+    }
+    .halfCircle{
+        position: absolute;
+        bottom: 0;
+        background-image: url("../resources/images/halfCircle.png");       
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 105px;
+        text-align: center; 
+        width: 230px;
+        transition: all .2s ease-in-out;
+    }
+
+    .halfCircle:hover + .downArrow{
+        -ms-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        font-size: 31px;
+    }
+
+    .halfCircle:hover {
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #landingPage .container{
+        right:15px;
+        left:15px;
+    }
+
+    .logo{
+        margin: auto;
+    }
+
+    .redHeading{
+        color:#990000;
+        text-align: center;
+        margin: 0;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 36px;
+        /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+        font-weight: bold; 
+    }
+    .vision{
+        background-color: #e5e2e2;
+    }
+    .visionContent{
+        color: black;
+        text-align: center;
+        padding: 0 5% 4% 5%;
+        font-size: 29px;
+        margin: 0%;
+        /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+        
+    }
+    .eye{
+        text-align: center;
+        margin: auto;
+        color: #990000;
+    }
+    .mission{
+        background-color: #fafbfc;
+    }
+    .carouselHeading{
+        color: #42536d;
+        padding: 2%;
+    }
+    .item img{
+        max-height: 450px !important;
+    }
+    #newsFeed{
+        padding-bottom: 3%;
+        height: 90%;
+    }
+    .takeTourVideo{
+        display: block;
+        margin: auto;   
+        width:70vw;
+        margin-bottom: 20px;
+        height:60vh;
+    }
+
+    .takeTourContainer{
+        margin-top: 8%;
+        position: absolute;
+        display: none;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .takeTourCloseBtn{
+        
+        display: block;
+        margin: auto;
+    }
+
+    .blur{
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        background:rgba(0, 0, 0, 0.75);
+        background-blend-mode: darken;
+    }
+
+    .image1{background-image: url("../resources/images/layer-1.png");}
+    .image2{background-image: url("../resources/images/layer-2.png");}
+    .image3{background-image: url("../resources/images/layer-3.png");}
+    .image4{background-image: url("../resources/images/layer-4.png");}
+    .image5{background-image: url("../resources/images/layer-5.png");}
+    .image6{background-image: url("../resources/images/layer-6.png");}

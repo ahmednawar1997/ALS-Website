@@ -1,0 +1,102 @@
+body	
+{
+	background-image: url("../resources/images/tiles.jpeg") ;
+	background-repeat: repeat;
+}
+
+.pad
+{
+	padding-left: 50px;
+}
+
+.gmap_canvas iframe{
+	width: 100%;
+	height:450px;
+}
+.image
+{
+	width: 100%;
+	height:400px;
+}
+.admissionbox
+{
+	background-color:white;
+	padding-top: 10px;
+	padding-bottom: 1px;
+}
+.text{
+	font-family: 'Libre Franklin','Open Sans',sans-serif;
+}
+.admission
+{
+	background-color: white;
+}
+
+.box
+{
+	margin-top: 40px;
+
+}
+.header-admission
+{
+    color: red;
+}
+.tabs
+{
+	padding-right: 40px;
+}
+
+.TC-template
+{
+	color: green;
+}
+
+.images-open-mornings
+{
+	height:50px;
+	width:50px;
+	margin-right: 70px;
+}
+
+input[type=radio]
+{
+	transform: scale(1.5);
+}
+.gender-registration-form
+{
+	font-weight:400;margin-bottom: 20px;
+	text-align: left;
+}
+.list-group-item.active {
+	background-color: green ;
+	border-color: green;
+}
+.list-group-item:hover{
+	cursor: pointer;
+
+}
+
+.text
+{
+	background-color: white;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px; 
+	margin-bottom: 40px;
+}
+
+.logos img
+{	
+	height: 30px;
+	width: 30px;
+}
+
+hr
+{
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+.list-group-item.active
+{
+	color : white !important;
+}

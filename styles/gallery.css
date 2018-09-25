@@ -1,0 +1,16 @@
+#gallery img:hover{
+    background:rgba(0, 0, 0, 0.75);
+    background-blend-mode: darken;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    transition: all 0.6s;
+
+}
+.img-thumbnail{
+    max-height: 150px;
+    width: 100%;
+}

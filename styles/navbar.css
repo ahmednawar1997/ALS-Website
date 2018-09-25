@@ -1,0 +1,48 @@
+body	
+{
+	background-image: url("tiles.jpeg") ;
+	background-repeat: repeat;
+	
+}
+.container
+{
+	padding-left: 50px	!important;
+	padding-right:50px !important;
+}
+
+.navbar-design
+{
+	background-color:#ffffff;
+	text-align: left;
+}
+
+.navbar-activeitem
+{
+	color: red !important;
+	font-weight: bold !important;
+}
+
+nav
+{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+#navbar a
+{
+	font-weight:bold;
+	font-size: 14px;
+
+}
+
+ul a:hover { color: #cf0241 !important; }
+
+.a-pad
+{
+	padding-left: 40px !important;
+}
+
+.pad
+{
+	padding-left: 50px;
+}

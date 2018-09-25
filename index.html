@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>ALS</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/carousel.css"> 
+        <link rel="stylesheet" type="text/css" href="styles/indexnavbar.css"> 
+        <link rel="stylesheet" type="text/css" href="styles/template.css"> 
+    </head>
+    <body>
+
+        <div style="border-bottom: 3px solid red;background-color: white;" id="navbar">
+			<nav class="navbar navbar-expand-lg navbar-light navbar-design container ">
+
+				  <a class="navbar-brand pos-navbar"  href="index.html"><img src="resources/images/ALSlogo.png" style="height:50px;width:55px;"></a>
+				  <div style="margin-right: -100px;">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+				    <span class="navbar-toggler-icon" ></span>
+				  </button>
+				  </div>
+
+				  <div class="collapse navbar-collapse justify-content-end pos-navbar" id="navbarNavDropdown">
+				    <ul class="navbar-nav">
+
+				      <li class="nav-itempos-navbar ">
+				        <a class="nav-link a-pad home-navbar pos-navbar" href="index.html" >Home <span class="sr-only">(current)</span></a>
+				      </li>
+
+				       <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle a-pad pos-navbar"  href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Academics
+				        </a>
+
+				        <div class="dropdown-menu" style="float:left;" aria-labelledby="navbarDropdownMenuLink">
+				          <a class="dropdown-item" href="views/academics.html">Overview</a>
+                            <a class="dropdown-item" href="#">Junior</a>
+                            <a class="dropdown-item" href="#">Middle</a>
+                            <a class="dropdown-item" href="#">Senior</a>
+				        </div>
+				      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle a-pad pos-navbar"  href="views/admission-process.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Admission
+                        </a>
+
+                        <div class="dropdown-menu" style="float:left;" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="views/admission-process.html">Requirements</a>
+                            <a class="dropdown-item" href="#">Admission Process</a>
+                            <a class="dropdown-item" href="#">Open Mornings</a>
+                            <a class="dropdown-item" href="#">Apply Now</a>
+                        </div>
+                      </li>
+
+				      <li class="nav-item">
+				        <a class="nav-link a-pad pos-navbar" href="views/gallery.html" >Gallery</a>
+				      </li>
+
+				      <li class="nav-item">
+				        <a class="nav-link a-pad pos-navbar" href="views/contact-us.html" >Contact us</a>
+				      </li>
+
+				     
+
+				    </ul>
+				  </div>
+			</nav>
+		</div>
+
+        <div class="container-fluid" style="position:relative" id="UserHomePage">
+            <div class="row" style="margin-left: 0;margin-right: 0;">
+                <div class="col-lg-12" style="padding-right: 0px;padding-left: 0px;">
+                    <div id="landingPage">
+                        <img class="logo" src="resources/images/logo.png" alt="">
+                        <h1>Alexandria Language School</h1>
+                        <hr>
+                        <h4>Where Education Becomes A Passion</h4>
+                        <button class="btn btn-default btn-lg" id="takeATourButton">Take a tour</button>
+                        <div class="halfCircle container">
+                            <a class="scrollButton downArrow" style="text-decoration: none;">Explore</a>
+                            <i class="fas fa-angle-down"></i>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="takeTourContainer">
+                    <iframe class="takeTourVideo" data-src="https://www.youtube.com/embed/SqfTIr2HbZc" allowFullScreen="true"></iframe>
+                    <button class="btn btn-default btn-lg takeTourCloseBtn" onclick="closeVideo();">Close</button>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="landingMenu">
+            <div class="paddingDiv">
+                <div class="row">
+                    <div class="col-lg-4 hiddenOverflow">
+                        <div class="image1 menuContainer"  onclick="location.href='views/academics.html';"><div class="buttonHeading"><p>Academics</p></div></div>
+                    </div>
+                    <div class="col-lg-4 hiddenOverflow">
+                        <div class="image2 menuContainer" onclick="location.href='views/admission-process.html';"><div class="buttonHeading"><p>Admission</p></div></div>
+                    </div>
+                    <div class="col-lg-4 hiddenOverflow">
+                        <div class="image3 menuContainer" onclick="location.href='views/gallery.html';"><div class="buttonHeading"><p>Gallery</p></div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 hiddenOverflow">
+                        <div class="image4 menuContainer"><div class="buttonHeading"><p>E-Study</p></div></div>
+                    </div>
+                    <div class="col-lg-4 hiddenOverflow">
+                        <div class="image5 menuContainer"><div class="buttonHeading"><p>News</p></div></div>
+                    </div>
+                    <div class="col-lg-4 hiddenOverflow">
+                        <div class="image6 menuContainer"onclick="location.href='views/contact-us.html';"><div class="buttonHeading"><p>Contact Us</p></div></div>
+                     </div>
+                </div>
+            </div>  
+        </div>
+
+        <div id="myCarouselContainer">
+            <div class="container">
+            <h2> What's happenning at ALS</h2> 
+            <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="d-block w-100" src="resources/images/view1.jpg" alt="First slide">
+                                    <div class="carousel-caption">
+                                        <h3>Congrats!</h3>
+                                        <p>ALS students continue to make progress</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <img class="d-block w-100" src="resources/images/view2.jpg" alt="First slide">
+                                    <div class="carousel-caption">
+                                        <h3>Get Excited!</h3>
+                                        <p>Back to school at 9th of October</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="d-block w-100" src="resources/images/view3.jpg" alt="First slide">
+                                        <div class="carousel-caption">
+                                            <h3>Get Excited Again!</h3>
+                                            <p>Back to school at 9th of October</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="d-block w-100" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="First slide">
+                                        <div class="carousel-caption">
+                                            <h3>Acheivements</h3>
+                                            <p>Junior Science fair acheivements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="vision row">
+            <div class="col-9">
+                    <h2 class="redHeading">Our Vision</h2>
+                    <p class="visionContent">Our vision at Alexandria Language School is to empower students to 
+                        acquire, demonstrate, articulate and value knowledge and skills
+                        that will support them, as life-long learners, to participate in 
+                        and contribute to the global world and practise the core values
+                        of the school: respect, tolerance & inclusion, and excellence.</p>
+            </div>
+            <div class="col-3 eye"><i class="far fa-eye fa-9x"></i></div>
+            
+        </div>
+        <div class="mission vision">
+            <div class="row">
+                <div class="col-3 eye"><i class="fas fa-book-open fa-9x"></i></div>
+                    
+                <div class="col-9">
+                    <h2 class="redHeading">Our Mission</h2>
+                    <p class="visionContent">We will ensure that our students develop both the skills that a 
+                        sound education provides and the competencies essential for 
+                        success and leadership in the emerging creative economy. We
+                        will also lead in generating practical and theoretical 
+                        knowledge that enables people to better understand our world
+                        and improve conditions for local and global communities.</p>
+                    </div>
+            </div>
+               
+        </div>
+
+        <!-- <iframe width="956" height="538" src="https://www.youtube.com/embed/videoseries?list=PL7u4lWXQ3wfI_7PgX0C-VTiwLeu0S4v34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        
+        <footer>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row footer-inner">
+                            <!--  first column -->
+                            <div class="col-sm-4">
+                                    <h6> <strong> QUICK LINKS </strong></h6>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6">
+                                            <p><a href="">History</a> </p>
+                                            <p><a href="">Admission Process</a> </p>
+                                            <p><a href="">FAQ</a></p>
+        
+                                        </div>
+        
+                                        <div class="col-xs-6 col-sm-6">
+                                            <p><a href="">Curriculum</a> </p>
+                                            <p><a href="">Boarding</a> </p>
+                                            <p><a href="">Plan a visit</a></p>
+        
+                                        </div>
+        
+                                    </div>
+                               <br>																				
+                              </div>
+        
+        
+                            <!-- second column -->
+                            <div class="col-sm-4 ">
+        
+                                <h6><strong> CONNECT WITH US</strong></h6>
+                                <hr>
+            
+                                <p>Follow us on social media for all latest news.</p>
+                                <p>Click below to connect with us</p>
+                                <a href="https://www.facebook.com/Alexandrialanguageschool/"> <img src="resources/images/facebook.png" style="width:30px;height:30px;"></a> 
+                                <a href=""> <img src="resources/images/twitter.png" style="width:25px;height:25px;"></a>
+                                <a href=""> <img src="resources/images/instagram.png" style="width:30px;height:30px;"></a>
+                                <a href=""> <img src="resources/images/Youtube.png" style="width:25px;height:25px;"></a>
+                                <p> </p>
+        
+                            </div>
+                            <!-- third column -->
+                            <div class="col-sm-4">
+                                <h6><strong>NEWSLETTER SUBSCRIPTION</strong></h6>
+                                <hr>
+                                <form>
+                                      <div class="form-group row">
+                                          <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="margin-top: 19px;" placeholder="Enter email">
+                                        </div>
+                                        <div class="col-sm-3">
+                                                <br>
+                                            <button type="submit" class="btn btn-danger" style="margin-left: -15px;margin-right:5px;" >Submit</button> 
+                                        </div>
+                                        <br>
+                                      </div>
+                                   </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+        
+                <div class="footeri">
+        
+                    <div class="container">
+        
+                        <div class="row footer-inner-inner">
+        
+                            <!--  first column -->
+                            <div class="col-sm-8" style="text-align: left;">
+                                 <p>Phone - <a href="tel:+20033308555">+20-03-330 85 55</a> &nbsp;
+                        Phone - <a href="tel:+20033307554">+20-03-330 75 54</a> &nbsp;
+                        Email -  <a href="mailto:admin@als-schools.org">admin@als-schools.org</a> &nbsp;
+                        - &nbsp;<a href="">Map</a></p>
+                                    
+                            </div>
+                            <!-- second column -->
+                            <div class="col-sm-4">
+                               <p style="text-align:right;">Made by team</p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>	
+            </footer>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            
+
+        <script src="js/index.js"></script>
+      
+    </body>
+</html>
