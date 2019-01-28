@@ -10,6 +10,17 @@
         background-color: #ced5e0;
         overflow-x: hidden;
         font-family: 'Actor','Arial';
+        width: 100vw;
+    }
+    .row{
+        margin: 0 0 !important;
+    }
+    #image
+    {
+	background-image: url("../resources/images/schoolCampus.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh !important;
     }
     .container-fluid{
         padding:0;
@@ -18,14 +29,9 @@
     }
     #landingPage{
         text-align: center;
-        padding: 20vh 0;
-
-        background-image: url("../resources/images/schoolCampus.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-
+        padding: 5vh 0;
     }
+    
     #landingPage button{
         background-color: transparent;
         border-color: white;
@@ -122,7 +128,7 @@
 
     .scrollButton {
         margin:auto;
-        background-color: White;
+        /* background-color: White; */
         border: none;
         color: Black;
         padding: 20px;
@@ -135,19 +141,20 @@
         margin-top: 20px;
         padding-bottom: 0%;
         font-size: 25px;
-
     }
     .halfCircle{
         position: absolute;
-        bottom: 0;
-        background-image: url("../resources/images/halfCircle.png");       
+        bottom: 0 !important;
+        background-image: url("../resources/images/halfCircle.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         height: 105px;
-        text-align: center; 
+        text-align: center;
         width: 230px;
         transition: all .2s ease-in-out;
+        right: 15px;
+        left: 15px;
     }
 
     .halfCircle:hover + .downArrow{
@@ -185,6 +192,136 @@
         font-size: 36px;
         /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
         font-weight: bold; 
+    }
+    .indicators
+    {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        left: 0;
+        z-index: 15;
+        height: 20px;
+        background-color: #ffffff;
+        width: 8%;
+        height: 22px;
+        margin: auto;
+    }
+    .carouselText
+    {
+        color:black;
+        text-align: center;
+        background-image: url(../resources/images/quotesLayer.png);
+        height: 45%;
+        opacity: 0.9;
+    }
+    .carousel-item p
+    {
+        padding-top: 5%;
+        padding-left: 12%;
+        padding-right: 12%;
+        font-weight: 300;
+        font-size: 27px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #quotationMarks
+    {
+        color: red;
+        font-size: 34px;
+        
+    }
+    #quoteOwner
+    {
+        font-weight: 600;
+        padding: 0;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .carousel-indicators li
+    {
+        background-color: #6c757d99;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 100%;
+        width: 6px;
+        height: 6px;
+        
+    }
+    .carousel-control-next-icon
+    {
+        background-image: url(../resources/images/forward.png);
+    }
+    .carousel-control-prev-icon
+    {
+        background-image: url(../resources/images/backward.png);
+    }
+    .carousel-indicators
+    {
+        position: unset;
+        height: 20px;
+        /* margin: auto; */
+    }
+    .carousel-indicators .active
+    {
+        background-color: #6c757d99;
+        width: 10px;
+        height: 10px;
+        padding: 4px;
+        border: 2px solid #178db89e;
+    }
+    .whatshappening
+    {
+        text-align: center;
+        color: black;
+    }
+    .more
+    {
+        text-align: right;
+        color:black;
+    }
+    .card
+    {
+        border: 1px solid #42536d;
+        margin: 0 35px;
+        color: black;
+    }
+    .card-small
+    {
+        border: 1px solid #42536d;
+        margin: 0 3px;
+        color: black;
+    }
+    .card-body
+    {
+        padding: 0 0;
+    }
+    .cardDate
+    {
+        padding-left: 10px;
+        margin-bottom: 5px;
+        font-family: Helvetica;
+        font-size: 12px;
+        color:#75827f;
+    }
+    .subtitle
+    {
+        padding: 0 30px;
+    }
+    .card-imageBig
+    {
+        width: 100%;
+        height: 50%;
+    }
+    .image-subtitle
+    {
+        bottom: 0;
+        height: 20px;
+        width: 100%;
+        background-color: black;
+        padding-bottom: 20px;
+        opacity: 0.6;
+        color:white !important;
     }
     .vision{
         background-color: #e5e2e2;

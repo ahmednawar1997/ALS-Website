@@ -8,21 +8,52 @@ nav
 {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
+	background-color: transparent !important;
 }
 .container
 {
 	padding-left: 50px	!important;
 	padding-right:50px !important;
 }
-.home-navbar
+
+.navbar
 {
-	font-weight: bold;
-	color: red !important;
+	padding-left: 0px;
+}
+
+.TopLeftLogo
+{
+	display: flex;
+	margin-top: 10px;
+	border-width: 2px;
+	border-left-width: 0px !important;
+	border-style: solid;
+	border-color: red;
+	border-top-right-radius: 45px;
+	border-bottom-right-radius: 45px;
+	background-color: #ffffff;
+	font-family: Helvetica;
+	
+}
+
+#h-tag1
+{	
+	padding-top: 5px;
+    margin-bottom: -6;
+}
+
+#h-tag2
+{	
+    margin-bottom: -3px;
+}
+#h-tag3
+{
+	margin-bottom: 0px;
 }
 nav a
 {    
 	top: 10px;
-position: relative;
+	position: relative;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 	font-weight:400;
 	font-size: 14px;
@@ -35,9 +66,45 @@ position: relative;
 	top:0px;
 }
 
-ul a:hover 
+.nav-item:hover 
 { 
-	color: #cf0241 !important;
+	text-decoration: underline !important;
+}
+
+ul a 
+{
+	color: white !important;
+	font-weight: 600  !important;
+}
+
+.dropdown-menu
+{
+	background-color: #31363C;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	opacity: 0.7;
+}
+
+ul a.dropdown-item
+{
+	opacity: 1;
+	color: green;
+	
+}
+
+ul a.dropdown-item:hover
+{
+	background-color: #E01D2D;
+	opacity: 1;
+	text-decoration: none;
+	color:green;
+}
+
+.ALSText
+{
+	color:black !important;
+	float: left;
+	padding-right: 20px;
 }
 
 .a-pad
@@ -57,10 +124,3 @@ ul a:hover
 	padding-left: 50px;
 }
 
-#navbar{
-	width: 100%; /* Full width */
-    transition: top 0.3s; 
-    position: fixed;
-    top:-100px;
-    z-index: 20;
-}

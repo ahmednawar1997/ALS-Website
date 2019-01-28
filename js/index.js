@@ -47,15 +47,8 @@ function closeVideo() {
 };
 
 
-window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > ($( window ).height()*2)-200 || document.documentElement.scrollTop > ($( window ).height()*2)-200) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-}
+
 
 buildApiRequest('GET',
                 '/youtube/v3/playlists',
