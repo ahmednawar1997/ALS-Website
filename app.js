@@ -2,6 +2,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const http = require("http");
+const port = 3000;
+const hostname = '127.0.0.1';
 // Requiring Packages - End
 
 // configure app
@@ -14,7 +16,7 @@ app.use(
 ); // For parsing URL encoded Data
 app.use(bodyParser.json()); // Pars to json object
 
-(app = express()), app.set("view engine", "ejs");
+app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/"));
 
 // Website Routes
@@ -51,4 +53,9 @@ app.use(function(req, res, next) {
 app.use(function(err, _req, res, _next) {
   // TBD - for our own Error code handling
 });
-module.exports = app;
+
+
+app.listen(port ,hostname)
+{
+  console.log("Server is up and running");
+}
