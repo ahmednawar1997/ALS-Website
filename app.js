@@ -5,6 +5,7 @@ const http = require("http");
 const port = 3000;
 const hostname = '127.0.0.1';
 // Requiring Packages - End
+var DB = require("./db/connection");
 
 // configure app
 const app = express(); // define our app using express
@@ -15,9 +16,9 @@ app.use(
   })
 ); // For parsing URL encoded Data
 app.use(bodyParser.json()); // Pars to json object
-
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/"));
+
 
 // Website Routes
 // TBD - Use app.use insted and module exports to seperate  routes
