@@ -18,13 +18,13 @@
 #myCarouselContainer{
 	padding: 20px;
 	padding-bottom: 50px;
-    background-color: #efeff5;  
+    background-color: #efeff5;
 }
 
 #myCarouselContainer h2{
 	text-align: center;
     font-family: Century Schoolbook;
-    margin-bottom:40px; 
+    margin-bottom:40px;
     font-size: 40px;
     color: #6a6767;
 }
@@ -38,9 +38,8 @@
 	font-size: 20px;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 120px){
     #myCarouselContainer .container {
         max-width: 1600px;
     }
 }
-
