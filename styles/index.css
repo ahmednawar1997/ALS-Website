@@ -69,7 +69,45 @@
     }
     .vision{
         background-color: #df9f9f;
+
     }
+.land3{
+  padding-top: 20px;
+
+  font-family: Monotype Corsiva Regular;
+}
+    .newsStand{
+  color: black;
+  padding-top: 10px;
+
+    }
+.smallNews{
+  padding-left: 0px;
+  margin-left:0px;
+
+}
+.cursor{
+     cursor: pointer;
+}
+.mainStory{
+
+  width: 80%;
+   cursor: pointer;
+}
+
+.newsDate{
+  color: grey;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.news{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: Helvetica;
+
+}
 
     .paddingDiv .row{
         height: 50%;
@@ -273,16 +311,7 @@
         padding: 4px;
         border: 2px solid #178db89e;
     }
-    .whatshappening
-    {
-        text-align: center;
-        color: black;
-    }
-    .more
-    {
-        text-align: right;
-        color:black;
-    }
+
     .card
     {
         border: 1px solid #42536d;
@@ -401,6 +430,38 @@
         display: block;
         margin: auto;
     }
+
+  .rightStand{
+float: right;
+
+  }
+
+  .leftStand{
+    float: left;
+  }
+
+  .foot1{
+    background-image: url("../resources/images/footimg.jpg");
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+  }
+  .footbut{
+    border-radius: 50px !important;
+    font-size: 18px !important;
+    text-align: center;
+    width: 230px;
+    height: 50px;
+    padding: 10px !important;
+
+    background-color: #b80100 !important;
+    color: #fff !important;
+    margin-right: 20px;
+  }
 
     .blur{
         filter: blur(4px);
