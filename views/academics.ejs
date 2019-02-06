@@ -15,64 +15,83 @@
 
 <body>
 
-	<div style="border-bottom: 3px solid red;background-color: white;">
-		<nav class="navbar navbar-expand-lg navbar-light navbar-design container ">
-
-			<a class="navbar-brand" href="/"><img src="../resources/images/ALSlogo.png" style="height:50px;width:55px;"></a>
-			<div style="margin-right: -100px;">
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light navbar-design">
+			<div class="TopLeftLogo">
+				<div class="ALSLogo">
+					<a class="navbar-brand pos-navbar" style="float:left;" href="/">
+						<img src="resources/images/ALSlogo.png" style="height:80px;width:80px;padding-left: 5px;">
+					</a>
+				</div>
+				<div class="ALSText">
+					<h3 id="h-tag1">Alexandria</h3>
+					<h4 id="h-tag2">Language</h4>
+					<h5 id="h-tag3">School</h5>
+				</div>
+			</div>
+			<div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
 				 aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
 
-			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+			<div class="collapse navbar-collapse justify-content-end pos-navbar" id="navbarNavDropdown">
 				<ul class="navbar-nav">
- <li class="nav-itempos-navbar ">
-				        <a class="nav-link a-pad home-navbar pos-navbar" href="/" >Home <span class="sr-only">(current)</span></a>
-				      </li>
 
-				       <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle a-pad pos-navbar navbar-activeitem"  href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				          Academics
-				        </a>
+					<li class="nav-item pos-navbar ">
+						<a class="nav-link a-pad home-navbar pos-navbar" id="navbarButton" href="/">Home <span class="sr-only">(current)</span></a>
+					</li>
 
-				        <div class="dropdown-menu" style="float:left;" aria-labelledby="navbarDropdownMenuLink">
-				          <a class="dropdown-item" href="/academics">Overview</a>
-                            <a class="dropdown-item" href="#">Junior</a>
-                            <a class="dropdown-item" href="#">Middle</a>
-                            <a class="dropdown-item" href="#">Senior</a>
-				        </div>
-				      </li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle a-pad pos-navbar navbar-activeitem" id="navbarButton" href="/admission-process" id="navbarDropdownMenuLink"
+						 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							About us
+						</a>
 
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle a-pad pos-navbar"  href="/admission-process" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Admission
-                        </a>
+						<div class="dropdown-menu" style="float:left;" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Overview</a>
+							<a class="dropdown-item" href="views/academics.html">Acadamics</a>
+							<a class="dropdown-item" href="#">News</a>
+							<a class="dropdown-item" href="#">Gallery</a>
 
-                        <div class="dropdown-menu" style="float:left;" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="/admission-process">Requirements</a>
-                            <a class="dropdown-item" href="#">Admission Process</a>
-                            <a class="dropdown-item" href="#">Open Mornings</a>
-                            <a class="dropdown-item" href="#">Apply Now</a>
-                        </div>
-                      </li>
+						</div>
+					</li>
 
-				      <li class="nav-item">
-				        <a class="nav-link a-pad pos-navbar" href="/gallery" >Gallery</a>
-				      </li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle a-pad pos-navbar" id="navbarButton" href="/admission-process"
+						 id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Admission
+						</a>
 
-				      <li class="nav-item">
-				        <a class="nav-link a-pad pos-navbar" href="/contact-us" >Contact us</a>
-				      </li>
+						<div class="dropdown-menu" style="float:left;" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="/admission-process">Requirements</a>
+							<a class="dropdown-item" href="#">Admission Process</a>
+							<a class="dropdown-item" href="#">Open Mornings</a>
+							<a class="dropdown-item" href="#">Apply Now</a>
+						</div>
+					</li>
 
-				     
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle a-pad pos-navbar" id="navbarButton" href="/admission-process" id="navbarDropdownMenuLink"
+						 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Resources
+						</a>
+
+						<div class="dropdown-menu" style="float:left;" aria-labelledby="navbarDropdownMenuLink">
+
+						</div>
+					</li>
+
+
+					<li class="nav-item">
+						<a class="nav-link a-pad pos-navbar" id="navbarButton" href="/contact-us">Contact us</a>
+					</li>
 
 				</ul>
 			</div>
 		</nav>
 	</div>
-
 
 	<img class="image" src="../resources/images/academics.jpg">
 
@@ -88,11 +107,11 @@
 			<div class="col-4 tabs">
 				<div class="list-group" id="list-tab" role="tablist">
 					<a class="list-group-item list-group-item-action anchors active" id="OverviewButton">Overview</a>
-					
+
 					<a class="list-group-item list-group-item-action anchors" id="JuniorButton">Junior</a>
 					<a class="list-group-item list-group-item-action anchors" id="MiddleButton" href="/open-mornings">Middle</a>
-						<a class="list-group-item list-group-item-action anchors" id="SeniorButton">Senior</a>
-					
+					<a class="list-group-item list-group-item-action anchors" id="SeniorButton">Senior</a>
+
 				</div>
 				<hr>
 				<div class="logos">
@@ -106,29 +125,45 @@
 				<div class="row text">
 					<h4 class="header-admission">Programme</h4>
 					<br>
-					<p>The Junior School at Alexandria Language School in Dubai encompasses Grade 1-5, ages 6 – 10. Students in the Primary School follow the IB Primary Years Programme (PYP), a curriculum framework that is learner-centred, inquiry driven, concept-based and transdisciplinary. Our approach provides multiple points of entry for students and gives the teachers plenty of chance for small group and one-to-one facilitation. Learning through inquiry allows plenty of opportunities for personalizing learning while building the cognitive, social and emotional, and communication skills necessary for success, in school and life. Inquiry capitalizes on natural curiosity, guides activities and makes learning authentic. Our learners are busy making meaning of their world in significant, relevant, engaging and universal contexts.</p>
+					<p>The Junior School at Alexandria Language School in Dubai encompasses Grade 1-5, ages 6 – 10. Students in the
+						Primary School follow the IB Primary Years Programme (PYP), a curriculum framework that is learner-centred,
+						inquiry driven, concept-based and transdisciplinary. Our approach provides multiple points of entry for students
+						and gives the teachers plenty of chance for small group and one-to-one facilitation. Learning through inquiry
+						allows plenty of opportunities for personalizing learning while building the cognitive, social and emotional, and
+						communication skills necessary for success, in school and life. Inquiry capitalizes on natural curiosity, guides
+						activities and makes learning authentic. Our learners are busy making meaning of their world in significant,
+						relevant, engaging and universal contexts.</p>
 					<br>
 
 					<h4 class="header-admission">Taught Subjects</h4>
 					<br>
 					<p>The following language proficiency levels are minimal indicative requirements
-							at the start of the school year for admission to the respective bilingual grades:</p>
+						at the start of the school year for admission to the respective bilingual grades:</p>
 
-						<ul>
-							<li>Language arts</li>
-							<li>Mathamtics</li>
-							<li>Science</li>
-							<li>Arabic</li>
-							<li>Islamic Studies</li>
-							<li>P.E</li>
-							
-						</ul>
-						<br><div>
-					<h4 class="header-admission">Assessment</h4>
-					
-					<p>Assessment involves the gathering and analysis of information about student performance and informs practice. It identifies what students know, understand, can do and feel at different stages of the learning process. Particular learning outcomes on which we intend to report are selected prior to designing the method of assessment. We consider the variety of ways that individual students understand experience. Self-assessment and reflection are given importance. All stakeholders including administrators, parents, teachers and students should have a clear understanding of the reason for the assessment, what is being assessed, the criteria for success and the method by which the assessment is made. Both the process and the product of inquiry are evaluated. Records are maintained of inquiries initiated by students, looking for an increase in the substance and depth of student questions.</p>
+					<ul>
+						<li>Language arts</li>
+						<li>Mathamtics</li>
+						<li>Science</li>
+						<li>Arabic</li>
+						<li>Islamic Studies</li>
+						<li>P.E</li>
+
+					</ul>
 					<br>
-</div>
+					<div>
+						<h4 class="header-admission">Assessment</h4>
+
+						<p>Assessment involves the gathering and analysis of information about student performance and informs practice.
+							It identifies what students know, understand, can do and feel at different stages of the learning process.
+							Particular learning outcomes on which we intend to report are selected prior to designing the method of
+							assessment. We consider the variety of ways that individual students understand experience. Self-assessment and
+							reflection are given importance. All stakeholders including administrators, parents, teachers and students
+							should have a clear understanding of the reason for the assessment, what is being assessed, the criteria for
+							success and the method by which the assessment is made. Both the process and the product of inquiry are
+							evaluated. Records are maintained of inquiries initiated by students, looking for an increase in the substance
+							and depth of student questions.</p>
+						<br>
+					</div>
 				</div>
 			</div>
 
@@ -248,15 +283,28 @@
 					<!-- first section -->
 					<h4 class="header-admission">Life At ALS</h4>
 					<br>
-					<p>The Junior School at Alexandria Language School in Dubai encompasses Grade 1-5, ages 6 – 10. Students in the Primary School follow the IB Primary Years Programme (PYP), a curriculum framework that is learner-centred, inquiry driven, concept-based and transdisciplinary. Our approach provides multiple points of entry for students and gives the teachers plenty of chance for small group and one-to-one facilitation. Learning through inquiry allows plenty of opportunities for personalizing learning while building the cognitive, social and emotional, and communication skills necessary for success, in school and life. Inquiry capitalizes on natural curiosity, guides activities and makes learning authentic. Our learners are busy making meaning of their world in significant, relevant, engaging and universal contexts.</p>
+					<p>The Junior School at Alexandria Language School in Dubai encompasses Grade 1-5, ages 6 – 10. Students in the
+						Primary School follow the IB Primary Years Programme (PYP), a curriculum framework that is learner-centred,
+						inquiry driven, concept-based and transdisciplinary. Our approach provides multiple points of entry for students
+						and gives the teachers plenty of chance for small group and one-to-one facilitation. Learning through inquiry
+						allows plenty of opportunities for personalizing learning while building the cognitive, social and emotional, and
+						communication skills necessary for success, in school and life. Inquiry capitalizes on natural curiosity, guides
+						activities and makes learning authentic. Our learners are busy making meaning of their world in significant,
+						relevant, engaging and universal contexts.</p>
 					<br>
 
 					<div class="text-admission">
 						<p>
-							Life at ALS is full of variety and opportunities. Students enjoy a broad, challenging and holistic environment that brings together students from over 60 countries. Our lively and diverse student body plays a big part in creating the truly international experience we offer. In addition to our challenging academics, we make time for fun, teamwork and human connection. At ALS, we strive to build a community of global citizens who lead a healthy lifestyle and are respectful of others and our environment. In June 2016, our efforts to improve healthy eating, active living and a positive environment were recognised by the Knowledge and Human Development Authority in Dubai with the Happy Healthy School Award.
+							Life at ALS is full of variety and opportunities. Students enjoy a broad, challenging and holistic environment
+							that brings together students from over 60 countries. Our lively and diverse student body plays a big part in
+							creating the truly international experience we offer. In addition to our challenging academics, we make time for
+							fun, teamwork and human connection. At ALS, we strive to build a community of global citizens who lead a healthy
+							lifestyle and are respectful of others and our environment. In June 2016, our efforts to improve healthy eating,
+							active living and a positive environment were recognised by the Knowledge and Human Development Authority in
+							Dubai with the Happy Healthy School Award.
 						</p>
 
-					
+
 					</div>
 				</div>
 			</div>
@@ -380,7 +428,7 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	 crossorigin="anonymous"></script>
-	 <script src="../js/academics.js"></script>
+	<script src="../js/academics.js"></script>
 </body>
 
 </html>

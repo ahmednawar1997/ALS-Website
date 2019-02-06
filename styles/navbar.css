@@ -14,6 +14,7 @@ body
 {
 	background-color:#ffffff;
 	text-align: left;
+	border-bottom: 2px solid red;
 }
 
 .navbar-activeitem
@@ -21,6 +22,63 @@ body
 	color: red !important;
 	font-weight: bold !important;
 }
+
+.dropdown-menu
+{
+	background:rgba(49,54,60,0.7);
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+
+ul a.dropdown-item
+{
+	font-size: 16px;
+	color: white;
+
+}
+
+ul a.dropdown-item:hover
+{
+	background-color: #E01D2D;
+	text-decoration: none;
+	color: white;
+}
+
+ul a.dropdown-item:active
+{
+	background-color: #E01D2D;
+	text-decoration: none;
+}
+
+.TopLeftLogo
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	padding-top: 8px;
+	padding-right: 6px;
+	padding-bottom: 8px;
+	background-color: #ffffff;
+}
+
+#h-tag1
+{
+	padding-top: 5px;
+	font-weight: bold;
+    margin-bottom: -6px;
+}
+
+#h-tag2
+{
+	font-weight: bold;
+    margin-bottom: -3px;
+}
+#h-tag3
+{
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
 
 nav
 {
@@ -35,12 +93,21 @@ nav
 
 }
 
-ul a:hover { color: #cf0241 !important; }
+ul a.dropdown-menu:hover {
+	 color: white !important; 
+	}
+
+#navbarButton:hover
+{
+	color: #E01D2D !important;
+}
 
 .a-pad
 {
-	padding-left: 40px !important;
+	padding-left: 60px !important;
+	font-size: 22px !important;
 }
+
 
 .pad
 {
