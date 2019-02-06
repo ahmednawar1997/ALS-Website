@@ -1,4 +1,26 @@
+body
+{
+    background:white;
+}
+
 .text-admission
 {
     font-size: 14px;
 }
+
+.admissionbox
+{
+	background-color:white;
+	
+    padding-bottom: 20px;
+}
+.text{
+	font-family: 'Libre Franklin','Open Sans',sans-serif;
+}
+.admission
+{
+	background-color: white;
+}
+
+
+

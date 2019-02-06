@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../styles/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../styles/template.css">
+	<link rel="stylesheet" type="text/css" href="../styles/admission.css">
 	<link rel="stylesheet" type="text/css" href="../styles/footer.css">
 
 </head>
@@ -93,237 +94,234 @@
 		</nav>
 	</div>
 
-	<img class="image" src="../resources/images/contact.png">
-
 	<div class="admissionbox">
 		<div class="container">
 			<p class="admission">Admission > <span style="color:green;" id="pagingBar">Requirements </span></p>
+			<h1 id="titleTab"><span id="title">Requirements </span></h1>	
 		</div>
 	</div>
+
+	
+
+	<img class="image" src="../resources/images/contact.png">
+
+
 
 
 	<div class="container">
 		<div class="row box">
-			<div class="col-4 tabs">
-				<div class="list-group" id="list-tab" role="tablist">
-					<a class="list-group-item list-group-item-action anchors active" id="requirementsButton">Requirements</a>
-
-					<a class="list-group-item list-group-item-action anchors" id="admissionButton">Admission
-						Process</a>
-					<a class="list-group-item list-group-item-action anchors" id="list-messages-list" href="open-mornings.html">Open
-						Mornings</a>
-					<a class="list-group-item list-group-item-action anchors" id="applyNowButton">Apply
-						Now</a>
-					<a class="list-group-item list-group-item-action anchors" id="list-settings-list" href="fees.html">Fees</a>
+			<div class="col-12 tabs">
+				<div class="btn-group d-flex" role="group" id="list-tab" aria-label="Basic example">
+						<button type="button" class="btn btn-secondary active w-100" id="requirementsButton">Requirements</button>
+						<button type="button" class="btn btn-danger w-100" id="admissionButton">Admission Process</button>
+						<button type="button" class="btn btn-danger w-100" id="list-messages-list">Open Mornings</button>
+						<button type="button" class="btn btn-danger w-100" id="applyNowButton">Apply Now</button>
+						<button type="button" class="btn btn-danger w-100" id="list-settings-list">fees</button>
+					  </div>
 				</div>
-				<hr>
-				<div class="logos">
-					<a href=""><img src="../resources/images/fb.png"></a>
-					<a href=""><img src="../resources/images/twittersq.png"></a>
-					<a href=""><img src="../resources/images/youtubesq.png"></a>
+		</div>
 
-				</div>
+
+		<div class="col-12" id="admissionProcessTab" style="display:none;">
+			<div class="row text">
+				<h4 class="header-admission">Step One - Online Application</h4>
+				<br>
+				<h6>Please be ready to upload the following documents:</h6>
+				<ul>
+					<li>Copy of your child’s most recent nursery or school report (for KG1 and up)</li>
+					<li>Copy of your child’s passport (first page and Visa) and Emirates ID (front and back), if already available</li>
+					<li>Copy of both parents passports (first page and Visa) and Emirates ID (front and back), if already available</li>
+					<li>Copy of a passport sized photograph of your child</li>
+					<li>Copy of any learning difficulty diagnostic testing or educational assessment (if applicable) *</li>
+					<li>Copy of any psychological assessments (if applicable) *</li>
+					<li>Copy of custody papers (if applicable)</li>
+				</ul>
+
+
+				<h4 class="header-admission">Step Two - Interview and Assessment</h4>
+
+				<ol>
+					<li>Once the fully completed application with complete documents has been received,
+						Admissions request confidential Teacher Recommendation from student’s
+						former school for applicants G2 and above.</li>
+					<li>Applicant invited to interview and assessment (Sunday through Thursday 9am to 4pm).
+						Please pay the non-refundable application fee of AED 525
+						(check, cash or credit card) when you come to the assessment.</li>
+				</ol>
+
+				<h4 class="header-admission">Step Three - Interview and Assessment </h4>
+				<ol>
+					<li>Once the fully completed application with complete documents has been received,
+						Admissions request confidential Teacher Recommendation from student’s former school for applicants G2 and above.</li>
+					<li>Applicant invited to interview and assessment (Sunday through Thursday 9am to 4pm).
+						Please pay the non-refundable application fee of AED 525 (check, cash or credit card) when you come to the
+						assessment.</li>
+				</ol>
 			</div>
-			<div class="col-8" id="admissionProcessTab" style="display:none;">
-				<div class="row text">
-					<h4 class="header-admission">Step One - Online Application</h4>
+		</div>
+
+		<div class="col-12" id="applyNowTab" style="display:none;">
+			<div class="row text">
+				<div class="col-2">
+					<img src="../resources/images/registration-form-top.png" class="images-open-mornings">
+				</div>
+				<div class="col-10">
+					<h3>Registration Form</h3>
 					<br>
-					<h6>Please be ready to upload the following documents:</h6>
-					<ul>
-						<li>Copy of your child’s most recent nursery or school report (for KG1 and up)</li>
-						<li>Copy of your child’s passport (first page and Visa) and Emirates ID (front and back), if already available</li>
-						<li>Copy of both parents passports (first page and Visa) and Emirates ID (front and back), if already available</li>
-						<li>Copy of a passport sized photograph of your child</li>
-						<li>Copy of any learning difficulty diagnostic testing or educational assessment (if applicable) *</li>
-						<li>Copy of any psychological assessments (if applicable) *</li>
-						<li>Copy of custody papers (if applicable)</li>
-					</ul>
+					<a class="btn btn-success" href="#" role="button">Download form</a>
+					<hr>
 
-
-					<h4 class="header-admission">Step Two - Interview and Assessment</h4>
-
-					<ol>
-						<li>Once the fully completed application with complete documents has been received,
-							Admissions request confidential Teacher Recommendation from student’s
-							former school for applicants G2 and above.</li>
-						<li>Applicant invited to interview and assessment (Sunday through Thursday 9am to 4pm).
-							Please pay the non-refundable application fee of AED 525
-							(check, cash or credit card) when you come to the assessment.</li>
-					</ol>
-
-					<h4 class="header-admission">Step Three - Interview and Assessment </h4>
-					<ol>
-						<li>Once the fully completed application with complete documents has been received,
-							Admissions request confidential Teacher Recommendation from student’s former school for applicants G2 and above.</li>
-						<li>Applicant invited to interview and assessment (Sunday through Thursday 9am to 4pm).
-							Please pay the non-refundable application fee of AED 525 (check, cash or credit card) when you come to the
-							assessment.</li>
-					</ol>
 				</div>
-			</div>
-
-			<div class="col-8" id="applyNowTab" style="display:none;">
-				<div class="row text">
-					<div class="col-2">
-						<img src="../resources/images/registration-form-top.png" class="images-open-mornings">
-					</div>
-					<div class="col-10">
-						<h3>Registration Form</h3>
-						<br>
-						<a class="btn btn-success" href="#" role="button">Download form</a>
-						<hr>
-
-					</div>
-					<div class="col-2">
-						<img src="../resources/images/registration-form-bottom.png" class="images-open-mornings">
-					</div>
-					<div class="col-10">
-						<h3>Online Form </h3>
-						<form>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="surname">Surname</label>
-									<input type="text" class="form-control" id="surname" placeholder="Surname">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="othernames">Other Names</label>
-									<input type="text" class="form-control" id="othernames" placeholder="Other Names">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="DOB">Date of Birth</label>
-									<input type="text" class="form-control" id="DOB" placeholder="Date of Birth">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="POB">Place of Birth</label>
-									<input type="text" class="form-control" id="POB" placeholder="Place of Birth">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="nat">Nationality</label>
-									<input type="text" class="form-control" id="nat" placeholder="Nationality">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="SOO">State of orgin</label>
-									<input type="text" class="form-control" id="SOO" placeholder="State of orgin">
-								</div>
-
-								<div class="form-group col-md-6">
-									<label for="YOE">Year of Entry</label>
-									<input type="text" class="form-control" id="YOE" placeholder="20--">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="cls">class</label>
-									<input type="text" class="form-control" id="cls" placeholder="Year-">
-								</div>
-								<div class="form-group col-md-12">
-									<div class="form-check">
-										<h6 style="font-weight:400;margin-bottom: 20px;text-align: left;">Gender</h6>
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-										<label class="form-check-label" for="gridRadios1">
-											Male
-										</label> &emsp;&emsp;
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-										<label class="form-check-label" for="gridRadios2">
-											Female
-										</label>
-										<br>
-									</div>
-								</div>
-								<div class="form-group col-md-6">
-									<label for="p/g">Parent/Guardian</label>
-									<input type="text" class="form-control" id="p/g" placeholder="Full names">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="occ">Occupation</label>
-									<input type="text" class="form-control" id="occ" placeholder="Occupation">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="address">Address</label>
-									<input type="text" class="form-control" id="address" placeholder="address">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="phone">Phone Number</label>
-									<input type="text" class="form-control" id="phone" placeholder="+20 xxx xxx xxxx">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="prev">Prev School(s)</label>
-									<input type="text" class="form-control" id="prev" placeholder="Previous School(s)">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="phone">Email</label>
-									<input type="email" class="form-control" id="phone" placeholder="youremail@domain.com">
-								</div>
-
+				<div class="col-2">
+					<img src="../resources/images/registration-form-bottom.png" class="images-open-mornings">
+				</div>
+				<div class="col-10">
+					<h3>Online Form </h3>
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="surname">Surname</label>
+								<input type="text" class="form-control" id="surname" placeholder="Surname">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="othernames">Other Names</label>
+								<input type="text" class="form-control" id="othernames" placeholder="Other Names">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="DOB">Date of Birth</label>
+								<input type="text" class="form-control" id="DOB" placeholder="Date of Birth">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="POB">Place of Birth</label>
+								<input type="text" class="form-control" id="POB" placeholder="Place of Birth">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="nat">Nationality</label>
+								<input type="text" class="form-control" id="nat" placeholder="Nationality">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="SOO">State of orgin</label>
+								<input type="text" class="form-control" id="SOO" placeholder="State of orgin">
 							</div>
 
-
-							<div class="form-group">
+							<div class="form-group col-md-6">
+								<label for="YOE">Year of Entry</label>
+								<input type="text" class="form-control" id="YOE" placeholder="20--">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="cls">class</label>
+								<input type="text" class="form-control" id="cls" placeholder="Year-">
+							</div>
+							<div class="form-group col-md-12">
 								<div class="form-check">
-									<hr>
-									<input class="form-check-input" type="checkbox" id="gridCheck">
-									<label class="form-check-label" for="gridCheck">
-										I accept <span class="TC-template">terms and conditions</span> and general policy
+									<h6 style="font-weight:400;margin-bottom: 20px;text-align: left;">Gender</h6>
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label" for="gridRadios1">
+										Male
+									</label> &emsp;&emsp;
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										Female
 									</label>
+									<br>
 								</div>
 							</div>
-							<button type="submit" class="btn btn-success">Submit</button>
-						</form>
+							<div class="form-group col-md-6">
+								<label for="p/g">Parent/Guardian</label>
+								<input type="text" class="form-control" id="p/g" placeholder="Full names">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="occ">Occupation</label>
+								<input type="text" class="form-control" id="occ" placeholder="Occupation">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="address">Address</label>
+								<input type="text" class="form-control" id="address" placeholder="address">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="phone">Phone Number</label>
+								<input type="text" class="form-control" id="phone" placeholder="+20 xxx xxx xxxx">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="prev">Previous School(s)</label>
+								<input type="text" class="form-control" id="prev" placeholder="Previous School(s)">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="phone">Email</label>
+								<input type="email" class="form-control" id="phone" placeholder="youremail@domain.com">
+							</div>
 
-					</div>
-				</div>
-			</div>
+						</div>
 
 
-			<div class="col-8" id="requirementsTab">
-				<div class="row text">
-					<!-- first section -->
-					<h3 class="header-admission">English language requirements</h3><br>
-					<div class="text-admission">
-						<p>
-							Our languages department supports students coming from abroad and being new to English. Support is provided for
-							students joining KG1 to Grade 9,
-							who require assistance in English. To learn more about our English as Additional Language (EAL) Programme for
-							Grade 6 to Grade 9, click here.
-						</p>
+						<div class="form-group">
+							<div class="form-check">
+								<hr>
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">
+									I accept <span class="TC-template">terms and conditions</span> and general policy
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-success">Submit</button>
+					</form>
 
-						<p>English language requirements for our bilingual and language acquisition streams increase as students approach
-							the IB Diploma grades.
-							Please note that the below are minimal requirements for entry into grades 6 to 9.</p>
-
-						<ul>
-							<li>PreKG to G5 – students may enter as non-English speakers until mid-year in grade 5.</li>
-							<li>G6 – A.2.1 Junior</li>
-							<li>G7 – A.2.2 Junior</li>
-							<li>G8 – B.1 Junior</li>
-							<li>G9 – B.2 Junior</li>
-							<li>Grades 10 to 12 – Students must be able to function independently in English.</li>
-						</ul>
-					</div>
-					<!-- second section -->
-					<h3 class="header-admission">French and German requirements for Bilingual Streams </h3>
-					<div class="text-admission">
-						<p>The following language proficiency levels are minimal indicative requirements
-							at the start of the school year for admission to the respective bilingual grades:</p>
-
-						<ul>
-							<li>PreKG and KG1 – no specific language requirements</li>
-							<li>KG2 aiming at G1 E+ – basic understanding and oral command of French or German, exposure to French or German
-								at home</li>
-							<li>KG2 aiming at G1 bilingual – oral Portfolino A.1 level, exposure to F or G at home</li>
-							<li>G1 –A.1.1 Primary</li>
-							<li>G2 – A.1.2 Primary</li>
-							<li>G3 – A.2.1 Primary</li>
-							<li>G4 – A.2.2 Primary</li>
-							<li>G5 – B.1.1 Primary</li>
-							<li>G6 – A.2.1 Junior</li>
-							<li>G7 – A.2.2 Junior</li>
-							<li>G8 – B.1 Junior</li>
-							<li>G9 – B.2 Junior</li>
-							<li>Grades 10 to 12 – students must be able to follow a native curriculum in either French or German</li>
-						</ul>
-					</div>
 				</div>
 			</div>
 		</div>
+
+
+		<div class="col-12" id="requirementsTab">
+			<div class="row text">
+				<!-- first section -->
+				<h3 class="header-admission">English language requirements</h3><br>
+				<div class="text-admission">
+					<p>
+						Our languages department supports students coming from abroad and being new to English. Support is provided for
+						students joining KG1 to Grade 9,
+						who require assistance in English. To learn more about our English as Additional Language (EAL) Programme for
+						Grade 6 to Grade 9, click here.
+					</p>
+
+					<p>English language requirements for our bilingual and language acquisition streams increase as students approach
+						the IB Diploma grades.
+						Please note that the below are minimal requirements for entry into grades 6 to 9.</p>
+
+					<ul>
+						<li>PreKG to G5 – students may enter as non-English speakers until mid-year in grade 5.</li>
+						<li>G6 – A.2.1 Junior</li>
+						<li>G7 – A.2.2 Junior</li>
+						<li>G8 – B.1 Junior</li>
+						<li>G9 – B.2 Junior</li>
+						<li>Grades 10 to 12 – Students must be able to function independently in English.</li>
+					</ul>
+				</div>
+				<!-- second section -->
+				<h3 class="header-admission">French and German requirements for Bilingual Streams </h3>
+				<div class="text-admission">
+					<p>The following language proficiency levels are minimal indicative requirements
+						at the start of the school year for admission to the respective bilingual grades:</p>
+
+					<ul>
+						<li>PreKG and KG1 – no specific language requirements</li>
+						<li>KG2 aiming at G1 E+ – basic understanding and oral command of French or German, exposure to French or German
+							at home</li>
+						<li>KG2 aiming at G1 bilingual – oral Portfolino A.1 level, exposure to F or G at home</li>
+						<li>G1 –A.1.1 Primary</li>
+						<li>G2 – A.1.2 Primary</li>
+						<li>G3 – A.2.1 Primary</li>
+						<li>G4 – A.2.2 Primary</li>
+						<li>G5 – B.1.1 Primary</li>
+						<li>G6 – A.2.1 Junior</li>
+						<li>G7 – A.2.2 Junior</li>
+						<li>G8 – B.1 Junior</li>
+						<li>G9 – B.2 Junior</li>
+						<li>Grades 10 to 12 – students must be able to follow a native curriculum in either French or German</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 
 
