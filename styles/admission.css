@@ -34,7 +34,7 @@ body
 }
 
 .container{
-  max-width: 1500px;
+  max-width: 1400px;
 }
 #miniNavBack{
   padding-top: 10px;
@@ -52,6 +52,7 @@ body
     color: #232323;
 }
 
-.btn{
+.tabs button{
   height: 60px;
 }
+

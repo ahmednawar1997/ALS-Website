@@ -7,7 +7,7 @@ const hostname = '127.0.0.1';
 // Requiring Packages - End
 
 
-// var DB = require("./db/connection");
+ var DB = require("./db/connection");
 
 // configure app
 const app = express(); // define our app using express
