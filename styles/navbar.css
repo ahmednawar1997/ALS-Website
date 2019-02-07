@@ -1,8 +1,8 @@
-body	
+body
 {
 	background-image: url("tiles.jpeg") ;
 	background-repeat: repeat;
-	
+
 }
 
 
@@ -45,7 +45,9 @@ ul a.dropdown-item:active
 	background-color: #E01D2D;
 	text-decoration: none;
 }
-
+.navbar-nav{
+	margin-right: 50px;
+}
 .TopLeftLogo
 {
 	display: flex;
@@ -53,7 +55,7 @@ ul a.dropdown-item:active
 	margin-top: 10px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	padding-left: 60px;
+	padding-left: 80px;
 	background-color: #ffffff;
 }
 
@@ -61,13 +63,13 @@ ul a.dropdown-item:active
 {
 	padding-top: 5px;
 	font-weight: bold;
-    margin-bottom: -6px;
+    margin-bottom: -5px;
 }
 
 #h-tag2
 {
 	font-weight: bold;
-    margin-bottom: -3px;
+    margin-bottom: -2px;
 }
 #h-tag3
 {
@@ -85,12 +87,12 @@ nav
 #navbar a
 {
 	font-weight:bold;
-	font-size: 14px;
+	font-size: 12px;
 
 }
 
 ul a.dropdown-menu:hover {
-	 color: white !important; 
+	 color: white !important;
 	}
 
 #navbarButton:hover
@@ -101,11 +103,18 @@ ul a.dropdown-menu:hover {
 .a-pad
 {
 	padding-left: 60px !important;
-	font-size: 22px !important;
+	font-size: 18px !important;
+
+}
+
+#navbarNavDropdown{
+	margin-right: 50px;
 }
 
 
 .pad
 {
 	padding-left: 50px;
+
+
 }

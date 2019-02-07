@@ -1,12 +1,12 @@
-body	
+body
 {
-	background-image: url("../resources/images/tiles.jpeg") ;
-	background-repeat: repeat;
+	background-image: white;
 }
 
 .pad
 {
 	padding-left: 50px;
+
 }
 
 .gmap_canvas iframe{
@@ -16,7 +16,7 @@ body
 .image
 {
 	width: 100%;
-	height:400px;
+	height:500px;
 	background-attachment: fixed;
 }
 .container
@@ -83,12 +83,12 @@ input[type=radio]
 	background-color: white;
 	padding-top: 50px;
 	padding-left: 50px;
-	padding-right: 50px; 
+	padding-right: 50px;
 	margin-bottom: 40px;
 }
 
 .logos img
-{	
+{
 	height: 30px;
 	width: 30px;
 }

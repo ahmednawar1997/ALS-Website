@@ -79,6 +79,8 @@
     .newsStand{
   color: black;
   padding-top: 10px;
+  background-image: url("/resources/images/tiles.jpeg");
+  background-repeat: repeat;
 
     }
 .smallNews{

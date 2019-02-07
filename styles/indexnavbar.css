@@ -20,6 +20,9 @@ nav
 {
 	padding-left: 0px;
 }
+.navbar-nav{
+	margin-right: 80px;
+}
 
 .TopLeftLogo
 {
@@ -70,7 +73,7 @@ nav a
 
 font-family: 'Libre Franklin','Open Sans',sans-serif;
     line-height: 1.42857143;
-	
+
 
 }
 

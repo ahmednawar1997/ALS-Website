@@ -1,6 +1,7 @@
 body
 {
-    background:white;
+  background-image: white ;
+
 }
 
 .text-admission
@@ -11,7 +12,7 @@ body
 .admissionbox
 {
 	background-color:white;
-	
+
     padding-bottom: 20px;
 }
 .text{
@@ -20,7 +21,37 @@ body
 .admission
 {
 	background-color: white;
+
+}
+
+.titlenav{
+    margin-bottom: 0;
+}
+.image{
+  background-repeat: no-repeat;
+  background-image: url("../resources/images/adm.jpg");
+  background-size: 100% 100%;
+}
+
+.container{
+  max-width: 1500px;
+}
+#miniNavBack{
+  padding-top: 10px;
+  padding-bottom: 20px;
+
 }
 
 
 
+#title{
+      line-height: 1.42857143;
+      font-family: 'Libre Franklin', 'Open Sans', sans-serif;
+      font-size: 38px;
+      font-weight: 10px;
+    color: #232323;
+}
+
+.btn{
+  height: 60px;
+}

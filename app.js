@@ -31,7 +31,7 @@ app.use(require("./router/gallery"));
 app.use(require("./router/contact-us"));
 
 
-// template page 
+// template page
 app.get("/template", function(req, res) {
   res.render("template");
 });
