@@ -1,0 +1,57 @@
+.careerImage{
+    height: 40vh;
+    background-size: cover;
+    background-image: url('../resources/images/career2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: black;
+}
+.jobContainer{
+    border-radius: 15px;
+    background-color: white;
+    padding: 40px; 
+    border: 1px solid lightgrey;
+    transition: 1s;
+    margin: 20px;
+}
+
+.jobContainer:hover{
+    background-color: #be0000;
+    cursor: pointer;
+    color: white;
+}
+.jobDate{
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px 20px;
+    float: right;
+}
+.container h3{
+    text-align: center;
+    color: #345912;
+    margin: 20px;
+}
+.quote{
+    margin: 0 100px;
+    padding: 15px;
+    background-color: #f4f1ea;
+    border-radius: 5px;
+}
+.jobOpeningsTitle{
+    text-align: center;
+    padding-top:20px;
+    color: #be0000;
+    font-weight: bold;
+}
+.applyNow{
+    margin: 20px;
+    width: 100%;
+}
+.applyNowButton{
+    border-radius: 20px;
+    margin:auto;
+    display:block;
+}
