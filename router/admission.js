@@ -3,7 +3,8 @@ var router  = express.Router();
 
 
 router.get("/admission-process", function(req, res) {
-    res.render("admission-process");
+  var date = (new Date()).getFullYear();
+    res.render("admission-process" , {date : date});
   });
   
   module.exports = router;
