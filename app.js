@@ -2,15 +2,21 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const http = require("http");
-const port = 3000;
-const hostname = '127.0.0.1';
+
 // Requiring Packages - End
 
 
- var DB = require("./db/connection");
+// var DB = require("./db/connection");
 
 // configure app
 const app = express(); // define our app using express
+const port = normalizePort(process.env.PORT || "7822");
+
+app.set("port", port);
+
+/**
+ * Create HTTP server.
+ */
 
 app.use(
   bodyParser.urlencoded({
@@ -51,7 +57,25 @@ app.use(function(err, _req, res, _next) {
 });
 
 
-app.listen(port ,hostname)
-{
-  console.log("Server is up and running");
+var server = http.createServer(app);
+
+server.listen(40000, function(){
+  console.log("Server is running...");
+});
+
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
 }
