@@ -21,7 +21,7 @@ router.get("/jobs/:id", function (req, res) {
   let sql = "SELECT * FROM Jobs where ID = ?"
   con.query(sql, [req.params.id], function (err, jobs) {
     if (err) console.log(err);
-    res.render("viewJob", {job: jobs[0]});
+    res.render("viewJob", { job: jobs[0] });
   });
 });
 
