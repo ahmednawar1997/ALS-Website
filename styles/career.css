@@ -5,10 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-a:hover, a:visited, a:link, a:active{
-    text-decoration: none;
-    color: black;
-}
+
 .jobContainer{
     border-radius: 15px;
     background-color: white;
@@ -55,3 +52,21 @@ a:hover, a:visited, a:link, a:active{
     margin:auto;
     display:block;
 }
+
+.jobOpeningsLink:hover, .jobOpeningsLink:visited, .jobOpeningsLink:link, .jobOpeningsLink:active{
+    text-decoration: none;
+    color: black;
+}
+.viewJobContainer{
+    padding:20px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 30px 200;
+}
+.jobsList{
+    margin-bottom: 30px;
+
+
+
+}
+

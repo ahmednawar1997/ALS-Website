@@ -29,85 +29,22 @@
             ― William Arthur Ward</h5>
         <hr>
 
-        <h5 class="jobOpeningsTitle">Current Job Openings</h5>
+        <h5 class="jobOpeningsTitle">Current Job Openings [<%=jobs.length%>]</h5>
     </div>
     <div class="jobsList">
+
         <div class="container">
             <div class="row">
+                <% jobs.forEach(function(job){ %>
                 <div class="col-md-6">
-                    <div class="jobContainer">
+                    <div class="jobContainer" jobId = "<%=job.ID%>">
                         <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
+                            <h5><%=job.JobTitle%></h5>
+                            <h6 class="jobDate">End Date: <%=job.EndDate%></h6>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="jobContainer">
-                        <div class="">
-                            <h5>Dutch Teacher</h5>
-                            <h6 class="jobDate">Date</h6>
-                        </div>
-                    </div>
-                </div>
+                <%})%>
             </div>
         </div>
     </div>
@@ -123,7 +60,7 @@
     <script>
 
 $('.jobContainer').click(function(){
-    window.location = "/jobs/1";
+    window.location = "/jobs/" + $(this).attr("jobId");
 });
 
     </script>
