@@ -179,35 +179,35 @@
 					</div>
 					<div class="col-10">
 						<h3 class="formSection">CHILD</h3>
-						<form>
+						<form method="POST" action="/admission-process" enctype="multipart/form-data">
 							<div class="form-row">
 								<div class="form-group col-md-6">
-									<label for="surname">Child Name</label>
-									<input type="text" class="form-control" id="surname" placeholder="Surname">
+									<label for="childname">Child Name</label>
+									<input type="text" class="form-control" name="childname" id="childname" placeholder="child name" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="DOB">Date of Birth</label>
-									<input type="text" class="form-control" id="DOB" placeholder="Date of Birth">
+									<input type="text" class="form-control" name="dob" id="DOB" placeholder="Date of Birth" required>
 								</div>
 								<div class="form-group col-md-6">
-									<label for="POB">Age as of 1/10/<%= date %> </label>
-									<input type="text" class="form-control" id="POB" placeholder="Place of Birth">
+									<label for="age">Age as of 1/10/<%= date %> </label>
+									<input type="text" class="form-control" name="age" id="age" placeholder="Place of Birth" required>
 								</div>
 								<div class="form-group col-md-6">
-									<label for="DOB">Number of siblings in School </label>
-									<input type="number" class="form-control" id="siblings" placeholder="0">
+									<label for="siblings">Number of siblings in School </label>
+									<input type="number" class="form-control" name="siblings" id="siblings" placeholder="0" required>
 								</div>
 								<hr>
 								<div class="form-group col-md-12">
 									<div class="form-check">
 										<h6 style="font-weight:400;margin-bottom: 20px;text-align: left;">Gender</h6>
 										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-											value="option1" checked>
+											value="male" checked>
 										<label class="form-check-label" for="gridRadios1">
 											Male
 										</label> &emsp;&emsp;
 										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-											value="option2">
+											value="female">
 										<label class="form-check-label" for="gridRadios2">
 											Female
 										</label>
@@ -219,62 +219,62 @@
 								</div>
 								<div class="form-group col-md-6">
 									<label for="p/g">Parent/Guardian</label>
-									<input type="text" class="form-control" id="p/g" placeholder="Full names">
+									<input type="text" class="form-control" name="parent" id="p/g" placeholder="Full names" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="occ">Occupation</label>
-									<input type="text" class="form-control" id="occ" placeholder="Occupation">
+									<input type="text" class="form-control" name="occupation" id="occ" placeholder="Occupation" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="nationality">Nationality</label>
-									<input type="text" class="form-control" id="nationality" placeholder="Egyptian">
+									<input type="text" class="form-control" name="nationality" id="nationality" placeholder="Egyptian" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="address">Address</label>
-									<input type="text" class="form-control" id="address" placeholder="address">
+									<input type="text" class="form-control" name="address" id="address" placeholder="address" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="profession">Profession</label>
-									<input type="text" class="form-control" id="profession" placeholder="profession">
+									<input type="text" class="form-control" name="profession" id="profession" placeholder="profession" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="university">University Degree</label>
-									<input type="text" class="form-control" id="university" placeholder="profession">
+									<input type="text" class="form-control" name="university" id="university" placeholder="Bachelors" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="phoneNumber">Phone Number</label>
-									<input type="text" class="form-control" id="phoneNumber"
+									<input type="text" class="form-control" name="phone" id="phoneNumber" required
 										placeholder="+20 xxx xxx xxxx">
 								</div>
 								<div class="form-group col-md-6">
-									<label for="phone">Email</label>
-									<input type="email" class="form-control" id="phone"
+									<label for="email">Email</label>
+									<input type="email" class="form-control" name="email" id="email" required
 										placeholder="youremail@domain.com">
 								</div>
 								<div class="form-group col-md-6">
 									<label for="profession">Father ID : </label>
-									<input type="file"  id="fatherID">
+									<input type="file" name="fatherID"  id="fatherID" required>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="profession">University Certificate : </label>
-									<input type="file"  id="uniCertificate">
+									<input type="file" name="fatherUNI" id="uniCertificate" required>
 								</div>
 								<div class="col-12">
 									<h3 class="formSection formSectionGrand">GRANDFATHER</h3>
 								</div>
 								<div class="form-group col-md-6">
 									<label for="phone">Grandfather Name</label>
-									<input type="grandName" class="form-control" id="grandName"
+									<input type="grandName" class="form-control" name="grandName" id="grandName"
 										placeholder="GrandFather Name">
 								</div>
 								<div class="form-group col-md-6">
 									<label for="grandprofession"> Grandfather Profession</label>
-									<input type="email" class="form-control" id="grandprofession"
+									<input type="email" class="form-control" name="grandProfession" id="grandprofession"
 										placeholder="youremail@domain.com">
 								</div>
 								<div class="form-group col-md-6">
 									<label for="grandAddress">Address</label>
-									<input type="email" class="form-control" id="grandAddress"
+									<input type="email" class="form-control" name="grandAddress" id="grandAddress"
 										placeholder="youremail@domain.com">
 								</div>
 
