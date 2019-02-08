@@ -4,9 +4,18 @@ var con = require("../db/connection");
 var path = require("path");
 var multer = require("multer");
 
-var upload = multer({dest : filePath });
+
 var filePath =  path.dirname("router") +"/upload";
 var date = (new Date()).getFullYear();
+var storage =   multer.diskStorage({
+  destination: function (req, file, callback) {
+    callback(null, './upload');
+  },
+  filename: function (req, file, callback) {
+    callback(null, date +'-' + file.originalname );
+  }
+});
+var upload = multer({storage : storage });
 
 
 router.get("/admission-process", function(req, res) {
