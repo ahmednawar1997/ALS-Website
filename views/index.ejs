@@ -49,7 +49,7 @@
                 <a class="dropdown-item" href="views/academics.html">Acadamics</a>
                 <a class="dropdown-item" href="#">News</a>
                 <a class="dropdown-item" href="/gallery">Gallery</a>
-                <a class="dropdown-item" href="#">Careers</a>
+                <a class="dropdown-item" href="/jobs">Careers</a>
 
               </div>
             </li>
@@ -202,6 +202,7 @@
 
 
   <div class="container-fluid newsStand">
+
     <div class="row land3" align="center">
       <div class="col-6">
         <div>
@@ -211,13 +212,13 @@
 
       <div class="col-3" align="Right">
 
-        <h3 style="text-decoration:underline;">News</h3>
+        <h3 style="text-decoration:underline;" id="new">News</h3>
 
 
       </div>
       <div class="col-3" align="left">
 
-        <h3>Socail media</h3>
+        <h3 id="social">Socail media</h3>
 
 
       </div>
@@ -332,6 +333,30 @@
 
 
     </div>
+
+
+
+    <div class="row social_tabs">
+      <div class="container">
+
+        <div class="row" style="margin-top:30px;margin-bottom:60px;">
+
+
+          <div class=" col-lg-4" style="margin-top:30px;margin-bottom:50px;">
+            <div class=" fb-page" data-href="https://www.facebook.com/Alexandrialanguageschool/" data-width="500" data-tabs="timeline" data-height="750" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+              data-show-facepile="false">
+              <blockquote cite="https://www.facebook.com/Alexandrialanguageschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Alexandrialanguageschool/">Alexandria Language School</a></blockquote>
+            </div>
+
+          </div>
+          <div class="col-lg-7" align="right" style="margin-left:30px;margin-top:30px;margin-bottom:50px;">
+            <a class="twitter-timeline" data-height="750" href="https://twitter.com/AlsSchool?ref_src=twsrc%5Etfw">Tweets by AlsSchool</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- end of newsfeed -->
   </div>
 
@@ -481,6 +506,18 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
+
   <script src="/js/index.js"></script>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
 </body>

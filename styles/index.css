@@ -7,7 +7,7 @@
 
     body{
         color:white;
-        background-color: #ced5e0;
+
         overflow-x: hidden;
         font-family: 'Actor','Arial';
         width: 100vw;
@@ -15,6 +15,15 @@
     .row{
         margin: 0 0 !important;
     }
+
+  #social{
+      cursor: pointer;
+    }
+
+    
+      #new{
+          cursor: pointer;
+        }
     #image
     {
 	background-image: url("../resources/images/schoolCampus.jpg");
