@@ -189,6 +189,62 @@
                 </h2>
             </div>
             <div id="addJobPostCollapse" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+
+                <div class="card-body">
+                    <div class="card">
+                        <div class="card-header row" style="border-bottom: 0px">
+                            <h5 class="col-6">Job Title</h5>
+                            <h5 class="col-2">Start Date</h5>
+                            <h5 class="col-2">End Date</h5>
+                            <h5 class="col-2" style="text-align:center">Applicants Count</h5>
+
+                        </div>
+                    </div>
+                    <!-- Tuple -->
+                    <div class="card">
+                        <div class="card-body row" style="padding: 0.2rem; padding-left: 1.5rem">
+                            <button class="btn btn-link col-6 card-text" data-toggle="modal" data-target="#jobModal" style="text-align:left">English
+                                Department Head</button>
+                            <p class="col-2 card-text">xx/xx/20xx</p>
+                            <p class="col-2 card-text">xx/xx/20xx</p>
+                            <p class="col-2 card-text" style="text-align:center">X</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body row" style="padding: 0.2rem; padding-left: 1.5rem">
+                            <button class="btn btn-link col-6 card-text" style="text-align:left">KG Principle</button>
+                            <p class="col-2 card-text">xx/xx/20xx</p>
+                            <p class="col-2 card-text">xx/xx/20xx</p>
+                            <p class="col-2 card-text" style="text-align:center">X</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body row" style="padding: 0.2rem; padding-left: 1.5rem">
+                            <button class="btn btn-link col-6 card-text" style="text-align:left">Maths Teacher</button>
+                            <p class="col-2 card-text">xx/xx/20xx</p>
+                            <p class="col-2 card-text">xx/xx/20xx</p>
+                            <p class="col-2 card-text" style="text-align:center">X</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" style="margin:1rem;float:right;"><i
+                            class="fas fa-plus-circle"></i> New Job Post
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals -->
+    <!-- New job post modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create New Job Post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <div class="card-body">
                     <form>
                         <div class="form-group">
@@ -201,7 +257,13 @@
                             <textarea class="form-control" id="job-description" rows="6"></textarea>
                         </div>
                         <div class="form-group row">
-                            <label for="endDate" class="col-1">End Date</label>
+                            <label for="startDate" class="col-2">Start Date</label>
+                            <div class="col-3">
+                                <input type="date" class="form-control-file" id="startDate">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="endDate" class="col-2">End Date</label>
                             <div class="col-3">
                                 <input type="date" class="form-control-file" id="endDate">
                             </div>
@@ -212,9 +274,62 @@
             </div>
         </div>
     </div>
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+    <!-- New job post modals -->
+
+    <div class="modal fade bd-example-modal-lg" id="jobModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="height: 80%; overflow-y: scroll;">
+
+                <div class="card-body">
+                    <div class="card">
+                        <div class="card-header row" style="white-space: nowrap; overflow: hidden; border-bottom: 0; padding: 0.2rem;">
+                            <h5 class="col-4">Name</h5>
+                            <h5 class="col-4">Email</h5>
+                            <h5 class="col-2">Phone</h5>
+                            <h5 class="col-2">Resume</h5>
+
+                        </div>
+                    </div>
+                    <!-- Tuple -->
+                    <div class="card">
+                        <div class="card-body row" style="white-space: nowrap; overflow: hidden; padding: 0.2rem;">
+                            <p class="col-4 card-text">Omar Ali Ahmed Katary</p>
+                            <p class="col-4 card-text">omar.katary@hotmail.com</p>
+                            <p class="col-2 card-text">01156640400</p>
+                            <button class="btn btn-link col-2 card-text" style="text-align:center">Download</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body row" style="white-space: nowrap; overflow: hidden; padding: 0.2rem;">
+                            <p class="col-4 card-text">Omar Ali Ahmed Katary</p>
+                            <p class="col-4 card-text">omar.katary@hotmail.com</p>
+                            <p class="col-2 card-text">01156640400</p>
+                            <button class="btn btn-link col-2 card-text" style="text-align:center">Download</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body row" style="white-space: nowrap; overflow: hidden; padding: 0.2rem;">
+                            <p class="col-4 card-text">Omar Ali Ahmed Katary</p>
+                            <p class="col-4 card-text">omar.katary@hotmail.com</p>
+                            <p class="col-2 card-text">01156640400</p>
+                            <button class="btn btn-link col-2 card-text" style="text-align:center">Download</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery first, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 
 </body>
 

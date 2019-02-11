@@ -9,12 +9,11 @@ var con = mysql.createConnection({
 });
 con.connect(function (err) {
   if (err) {
-    console.log("Error connecting to database ! \n"+err);
+    console.log("Error connecting to database ! \n" + err);
     return;
   }
-  else
-  {
-      console.log("Database successfully connected");
+  else {
+    console.log("Database successfully connected");
   }
 });
 
