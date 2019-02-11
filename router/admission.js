@@ -7,6 +7,7 @@ var multer = require("multer");
 
 var filePath =  path.dirname("router") +"/upload";
 var date = (new Date()).getFullYear();
+
 var storage =   multer.diskStorage({
   destination: function (req, file, callback) {
     callback(null, './upload');
