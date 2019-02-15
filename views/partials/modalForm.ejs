@@ -9,7 +9,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/jobs/apply/<%=job.ID%>" method="POST" id="formId">
+                <form action="/jobs/apply/<%=job.ID%>" method="POST" id="formId" enctype="multipart/form-data">
                     <div class="form-group">
                         <label class="col-form-label">Name:</label>
                         <input type="text" class="form-control" name="name" required>
