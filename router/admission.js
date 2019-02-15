@@ -2,6 +2,7 @@ var express = require("express");
 var router  = express.Router();
 var con = require("../db/connection");
 var upload = require('../helpers/multerConfig');
+var date = (new Date()).getFullYear();
 
 router.get("/admission-process", function(req, res) {
   
