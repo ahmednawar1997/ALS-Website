@@ -1,4 +1,6 @@
 var multer = require("multer");
+
+var date = (new Date()).getFullYear();
 var maxSize = 50 * 1024 * 1024;
 
 var storage = multer.diskStorage({

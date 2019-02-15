@@ -3,11 +3,9 @@ var router = express.Router();
 var con = require("../db/connection");
 var upload = require('../helpers/multerConfig');
 
-
 router.get("/", function (req, res) {
   res.render("index");
 });
-
 
 router.get("/jobs", function (req, res) {
   let sql = "SELECT * FROM Jobs"
@@ -27,17 +25,8 @@ router.get("/jobs/:id", function (req, res) {
 });
 
 router.post("/jobs/apply/:jobId", upload.any(), function (req, res) {
-  console.log(req.params.jobId);
-  console.log(req.body.name);
-  console.log(req.body.email);
-  console.log(req.body.phone);
-  console.log('hna');
-  console.log(req.files[0].path);
-
-  //go fetch the job with this id and render the job page
-
-  let sql = "  INSERT INTO Applicants (Name, Email, Phone, JobID) VALUES (?, ?, ?, ?)"
-  con.query(sql, [req.body.name, req.body.email, req.body.phone, req.params.jobId], function (err, insertedApplicant) {
+  let sql = "  INSERT INTO Applicants (Name, Email, Phone, CV, JobID) VALUES (?, ?, ?, ?, ?)"
+  con.query(sql, [req.body.name, req.body.email, req.body.phone, req.files[0].path, req.params.jobId], function (err, insertedApplicant) {
     if (err) console.log(err);
     res.redirect('/jobs');
   });
