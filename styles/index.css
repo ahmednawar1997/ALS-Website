@@ -21,11 +21,6 @@
         transform: scale(1.3);
         transition: all 0.5s 0.3s ease-in-out;
     }
-    #takeATourButton
-    {
-        transform: scale(1);
-        transition: all 0.5s 0.3s ease-in-out;
-    }
   #social{
       cursor: pointer;
     }
@@ -254,7 +249,7 @@
     }
     .indicators
     {
-
+        position: absolute;
         right: 0;
         bottom: 10px;
         left: 0;
@@ -270,13 +265,12 @@
         color:black;
         text-align: center;
         background-image: url(../resources/images/quotesLayer.png);
-        height: 45%;
         opacity: 0.9;
     }
     .carousel-item p
     {
       color: black;
-        padding-top: 5%;
+        padding-top: 2%;
         padding-left: 12%;
         padding-right: 12%;
         font-weight: 400;
@@ -317,6 +311,9 @@
     .carousel-control-prev-icon
     {
         background-image: url(../resources/images/backward.png);
+    }
+    .carousel-item{
+        margin-bottom: 5%;
     }
     .carousel-indicators
     {
@@ -494,9 +491,9 @@ float: right;
         background-blend-mode: darken;
     }
 
-    .image1{background-image: url("../resources/images/layer-1.png");}
-    .image2{background-image: url("../resources/images/layer-2.png");}
-    .image3{background-image: url("../resources/images/layer-3.png");}
-    .image4{background-image: url("../resources/images/layer-4.png");}
-    .image5{background-image: url("../resources/images/layer-5.png");}
-    .image6{background-image: url("../resources/images/layer-6.png");}
+    .image1{background-image: url("../resources/images/Layer-1.png");}
+    .image2{background-image: url("../resources/images/Layer-2.png");}
+    .image3{background-image: url("../resources/images/Layer-3.png");}
+    .image4{background-image: url("../resources/images/Layer-4.png");}
+    .image5{background-image: url("../resources/images/Layer-5.png");}
+    .image6{background-image: url("../resources/images/Layer-6.png");}
