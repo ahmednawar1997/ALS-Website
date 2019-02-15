@@ -32,5 +32,9 @@ router.post("/jobs/apply/:jobId", upload.any(), function (req, res) {
   });
 });
 
+router.get("/overview",function(req , res)
+{
+    res.render("overview");
+});
 
 module.exports = router;
