@@ -1,0 +1,45 @@
+body{
+
+}
+.mainCon{
+  min-height: 100%;
+
+}
+
+.paddedCon{
+  width:100%;
+  margin-bottom: 100px;
+  background: white;
+}
+
+.firstRow{
+  padding-top: 100px;
+  background: transparent;
+}
+
+p{
+  font-size: 1vw;
+    line-height: 24px;
+    font-family: sourceSans;
+    font-weight: Normal;
+    font-style: Normal;
+    color: #5a5a5a;
+}
+.s h3{
+  color: red;
+font-size: 1.5vw;
+line-height: 26px;
+font-family: sourceSans;
+font-weight: Normal;
+font-style: Normal;
+margin: 0;
+padding: 0;
+}
+
+.sep {
+    height: 2px;
+    border-top: 3px dotted #dadada;
+
+    margin-left: auto;
+    margin-right: auto;
+}
