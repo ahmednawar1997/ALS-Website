@@ -21,7 +21,7 @@ nav
 	padding-left: 0px;
 }
 .navbar-nav{
-	margin-right: 80px;
+
 }
 
 .TopLeftLogo
@@ -103,7 +103,7 @@ ul a
 
 ul a.dropdown-item
 {
-	font-size: 16px;
+	font-size: 1vw;
 
 }
 
@@ -123,13 +123,15 @@ ul a.dropdown-item:active
 {
 	color:black !important;
 	float: left;
-	padding-right: 20px;
+	margin-top:auto;
+	margin-bottom: auto;
+	padding-right: 1vw;
 }
 
 .a-pad
 {
 	padding-left: 60px !important;
-	font-size: 22px !important;
+	font-size: 1.2vw !important;
 }
 .navbarbrand-navs
 {
