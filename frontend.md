@@ -1,7 +1,7 @@
 Frontend Tasks:
 	
 	General:
-		*navbar contents should be consistant across all pages
+		*navbar contents should be consistant across all pages -- done (beltagy)
 		*Gallery page to be removed from navbar
 
 	Home page:
@@ -13,7 +13,7 @@ Frontend Tasks:
 		*Grid menu contents ajustments 
 
 	Acadmics page:
-		*needs to build using same template of admission
+		*needs to build using same template of admission  done(beltagy)
 
 	News page:
 		*A template for news articls needs to be built and linked to news cards in home page
