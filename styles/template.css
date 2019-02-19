@@ -42,6 +42,12 @@ body
 	margin-top: 40px;
 
 }
+
+.academicsBox
+{
+	padding-top: 10px;
+}
+
 .header-admission
 {
     color: red;
@@ -128,8 +134,7 @@ body
 .admissionbox
 {
 	background-color:white;
-
-    padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 }
 .text{
 	font-family: 'Libre Franklin','Open Sans',sans-serif;
