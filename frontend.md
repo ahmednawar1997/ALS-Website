@@ -16,6 +16,7 @@ Frontend Tasks:
 		*needs to build using same template of admission  done(beltagy)
 
 	News page:
+		*needs to be designed and built
 		*A template for news articls needs to be built and linked to news cards in home page
 
 	Career page:
