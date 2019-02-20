@@ -3,11 +3,11 @@ var router = express.Router();
 var con = require("../db/connection");
 
 router.get("/admin", (req, res) => {
-    var query = "SELECT * FROM Applicants, jobs " +
-        "WHERE applicants.JobID = jobs.ID";
-    con.query(query, [], (err, jobInfo) => {
+    var query = "SELECT * FROM Jobs ";
+    con.query(query, [], (err, jobs) => {
         if (err) console.log("ERROR", err);
-        res.render("admin", jobInfo);
+        res.render("admin", { jobs });
+        console.log("JOBSS", jobs)
     })
 });
 

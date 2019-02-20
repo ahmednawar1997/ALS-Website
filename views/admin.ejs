@@ -84,47 +84,22 @@
     <!-- Admin Page -->
 
     <div class="accordion" id="accordionExample" role="tablist" aria-multiselectable="true">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#newsCollapse" aria-expanded="true" aria-controls="newsCollapse">
-                        <i class="far fa-edit"></i> Add News Article
-                    </button>
-                </h2>
-            </div>
 
-            <div id="newsCollapse" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    <form method="POST" action="/admin/new-article">
-                        <div class="form-group">
-                            <label for="news-title">Heading</label>
-                            <input name="articleTitle" type="text" class="form-control" id="news-title" placeholder="Enter article title">
+        <!-- <i class="far fa-edit"></i> Add News Article -->
 
-                        </div>
-                        <div class="form-group">
-                            <label for="news-article">Article</label>
-                            <textarea name="articleText" class="form-control" id="news-article" rows="6"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="news-image">Select Image</label>
-                            <input type="file" class="form-control-file" id="news-image">
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="float: right; margin-bottom: 1em;">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#manageNewsCollapse" aria-expanded="false"
                         aria-controls="manageNewsCollapse">
-                        <i class="far fa-newspaper"></i> Manage News Section
+                        <i class="far fa-newspaper"></i> News Settings
                     </button>
                 </h2>
             </div>
             <div id="manageNewsCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
                 <div class="card-body">
+
                     <form>
                         <div class="form-group row">
                             <label class="col-form-label col-2" for="main-article">Main Article</label>
@@ -176,6 +151,13 @@
                         </div>
                         <button type="submit" class="btn btn-primary" style="float: right; margin-bottom: 1em;">Save</button>
                     </form>
+                    <br>
+                    <hr>
+                    <div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newArticleModal" style="float:right;  margin-bottom: 1em;"><i
+                                class="far fa-edit"></i> New Article
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,7 +166,7 @@
                 <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#addJobPostCollapse" aria-expanded="false"
                         aria-controls="addJobPostCollapse">
-                        <i class="fas fa-chalkboard-teacher"></i> Add New Job Post
+                        <i class="fas fa-chalkboard-teacher"></i> Job Post Settings
                     </button>
                 </h2>
             </div>
@@ -201,40 +183,62 @@
                         </div>
                     </div>
                     <!-- Tuple -->
-                    <div class="card">
-                        <div class="card-body row" style="padding: 0.2rem; padding-left: 1.5rem">
-                            <button class="btn btn-link col-6 card-text" data-toggle="modal" data-target="#jobModal" style="text-align:left">English
-                                Department Head</button>
-                            <p class="col-2 card-text">xx/xx/20xx</p>
-                            <p class="col-2 card-text">xx/xx/20xx</p>
-                            <p class="col-2 card-text" style="text-align:center">X</p>
+                    <% jobs.forEach((job)=>{%>
+                        <div class="card">
+                            <div class="card-body row" style="padding: 0.35rem;">
+                                <button class="btn btn-link col-6 card-text" data-toggle="modal" data-target="#jobModal" style="text-align:left"><%=job.JobTitle%>
+                                </button>
+                                <p class="col-2 card-text">
+                                    <%=job.JobPostDate.toDateString()%>
+                                </p>
+                                <p class="col-2 card-text">
+                                    <%=job.EndDate.toDateString()%>
+                                </p>
+                                <p class="col-2 card-text" style="text-align:center">X</p>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body row" style="padding: 0.2rem; padding-left: 1.5rem">
-                            <button class="btn btn-link col-6 card-text" style="text-align:left">KG Principle</button>
-                            <p class="col-2 card-text">xx/xx/20xx</p>
-                            <p class="col-2 card-text">xx/xx/20xx</p>
-                            <p class="col-2 card-text" style="text-align:center">X</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body row" style="padding: 0.2rem; padding-left: 1.5rem">
-                            <button class="btn btn-link col-6 card-text" style="text-align:left">Maths Teacher</button>
-                            <p class="col-2 card-text">xx/xx/20xx</p>
-                            <p class="col-2 card-text">xx/xx/20xx</p>
-                            <p class="col-2 card-text" style="text-align:center">X</p>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" style="margin:1rem;float:right;"><i
-                            class="fas fa-plus-circle"></i> New Job Post
-                    </button>
+                        <%})%>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" style="margin:1rem;float:right;"><i
+                                    class="fas fa-plus-circle"></i> New Job Post
+                            </button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modals -->
+    <!-- New Article modal-->
+    <div id="newArticleModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create New Job Post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="/admin/new-article">
+                        <div class="form-group">
+                            <label for="news-title">Heading</label>
+                            <input name="articleTitle" type="text" class="form-control" id="news-title" placeholder="Enter article title">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="news-article">Article</label>
+                            <textarea name="articleText" class="form-control" id="news-article" rows="6"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="news-image">Select Image</label>
+                            <input type="file" class="form-control-file" id="news-image">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="float: right; margin-bottom: 1em;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- New job post modal -->
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
