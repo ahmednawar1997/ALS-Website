@@ -7,7 +7,7 @@ Frontend Tasks:
 	Home page:
 		*Responsive issues:
 			-scale adjustment
-			-News, Social media and Grid menu sections in 	mobile view
+			-News, Social media and Grid menu sections in 	mobile view --done(beltagy)
 		*animation needed in News/Social media section
 		*Take a tour feautre issues
 		*Grid menu contents ajustments --- done (shams)
