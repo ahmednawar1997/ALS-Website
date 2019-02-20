@@ -95,15 +95,15 @@
 
             <div id="newsCollapse" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    <form>
+                    <form method="POST" action="/admin/new-article">
                         <div class="form-group">
                             <label for="news-title">Heading</label>
-                            <input type="text" class="form-control" id="news-title" placeholder="Enter article title">
+                            <input name="articleTitle" type="text" class="form-control" id="news-title" placeholder="Enter article title">
 
                         </div>
                         <div class="form-group">
                             <label for="news-article">Article</label>
-                            <textarea class="form-control" id="news-article" rows="6"></textarea>
+                            <textarea name="articleText" class="form-control" id="news-article" rows="6"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="news-image">Select Image</label>
