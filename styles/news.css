@@ -7,7 +7,7 @@
     border-radius: 6px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .newsCard img {
@@ -19,10 +19,12 @@
     vertical-align: middle;
     border-radius: 6px;
 }
-.newsCard h3{
+
+.newsCard h3 {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 50px;
+    margin-left: 40px;
+    overflow: hidden;
 }
 
 .helper {
@@ -31,7 +33,7 @@
     vertical-align: middle;
 }
 
-.rotateNews:hover .newsCard{
+.rotateNews:hover .newsCard {
     transform: rotateY(180deg);
     cursor: pointer;
 }

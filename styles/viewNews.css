@@ -1,0 +1,28 @@
+.container h3 {
+    text-align: center;
+    color: #345912;
+    margin: 20px;
+}
+
+.container h4 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #295600;
+}
+
+.newsOpeningsLink:hover,
+.newsOpeningsLink:visited,
+.newsOpeningsLink:link,
+.newsOpeningsLink:active {
+    text-decoration: none;
+    color: 295600;
+}
+
+.newsImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 60%;
+    height: auto;
+}
