@@ -1,7 +1,9 @@
 .newsCard {
     margin: 20px;
-    background-color: #b23e3e;
-    border: 2px solid #b30000;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    background-color: #537435;
+    border: 2px solid #253f0d;
     color: white;
     height: 150px;
     border-radius: 6px;
@@ -10,12 +12,23 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
+.row:last-child {
+    margin-bottom: 20px;
+}
+
+.newsDesc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 1000px;
+}
+
 .newsCard img {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 1px;
     margin-right: auto;
     max-width: 300px;
-    max-height: 140px;
+    max-height: 145px;
     vertical-align: middle;
     border-radius: 6px;
 }
@@ -56,4 +69,15 @@
     color: white;
     transform: rotateY(180deg);
     z-index: 1;
+}
+
+.newsHeading {
+    text-align: center;
+    padding: 20px;
+    color: #345912;
+    margin: auto;
+
+    border: 1px solid #345912;
+    border-radius: 8px;
+    margin-top: 20px;
 }

@@ -18,7 +18,6 @@ router.get("/jobs", function (req, res) {
 });
 
 router.get("/jobs/:id", function (req, res) {
-  //go fetch the job with this id and render the job page
   let sql = "SELECT * FROM Jobs where ID = ?"
   con.query(sql, [req.params.id], function (err, jobs) {
     if (err) console.log(err);
@@ -42,11 +41,23 @@ router.get("/overview", function (req, res) {
 
 
 router.get("/news", function (req, res) {
-  res.render("news");
+  let sql = "SELECT * FROM News"
+  con.query(sql, function (err, news) {
+    if (err) console.log(err);
+    res.render("news", {
+      news: news
+    });
+  });
 });
 
 router.get("/news/:id", function (req, res) {
-  res.render("viewNews");
+  let sql = "SELECT * FROM News where ID = ?"
+  con.query(sql, [req.params.id], function (err, news) {
+    if (err) console.log(err);
+    res.render("viewNews", {
+      news: news[0]
+    });
+  });
 });
 
 module.exports = router;
