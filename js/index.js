@@ -1,18 +1,23 @@
 $(document).ready(function () {
-    $('.social_tabs').hide();
+    $('.social_tabs').addClass("hideEverything");
   $('.scrollButton').click(function () {
     scrollToLandingMenu();
   });
 $('#social').click(function(){
-  $('.news').hide();
-  $('.social_tabs').show();
+  $('.news').addClass("hideEverything");
+  $('.news').removeClass("showEverything")
+  $('.social_tabs').removeClass("hideEverything");
+  $('.social_tabs').addClass("showEverything");
   $('#social').css({"text-decoration": "underline"});
   $('#new').css({"text-decoration": "none"});
 });
 
 $('#new').click(function(){
-    $('.news').show();
-      $('.social_tabs').hide();
+  $('.social_tabs').addClass("hideEverything");
+  $('.social_tabs').removeClass("showEverything");
+  $('.news').removeClass("hideEverything");
+  $(".news").addClass("showEverything");
+  
   $('#new').css({"text-decoration": "underline"});
   $('#social').css({"text-decoration": "none"});
 });

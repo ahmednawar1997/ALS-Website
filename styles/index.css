@@ -35,11 +35,26 @@
   #social{
       cursor: pointer;
     }
-
-
-      #new{
+    #new{
           cursor: pointer;
-        }
+     }
+
+    .hideEverything
+    {
+        opacity:0;
+        height: 0;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important; 
+        transition: all 0.5s 0.3s ease-in-out;
+    }
+
+    .showEverything
+    {
+        opacity: 1;
+        height: auto;
+        transition: all 0.5s 0.3s ease-in-out;
+    }
+
     #image
     {
 	background-image: url("../resources/images/schoolCampus.jpg");
@@ -134,7 +149,7 @@ cursor: pointer;
   padding-top: 30px;
   padding-bottom: 50px;
   font-family: Helvetica;
-font-size: 0.9vw;
+  font-size: 0.9vw;
 }
 
     .paddingDiv .row{
