@@ -18,8 +18,9 @@ body{
 }
 
 .d{
-  background-image: url("/resources/images/tiles.jpeg");
+  background-image: url("/resources/images/tiles2.png");
   background-repeat: repeat;
+
 }
 
 #quotationMarks
