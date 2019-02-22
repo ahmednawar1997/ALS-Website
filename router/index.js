@@ -37,4 +37,9 @@ router.get("/overview",function(req , res)
     res.render("overview");
 });
 
+
+router.get("/news", function (req, res) {
+  res.render("news");
+});
+
 module.exports = router;

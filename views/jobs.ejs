@@ -40,7 +40,8 @@
                     <div class="jobContainer" jobId = "<%=job.ID%>">
                         <div class="">
                             <h5><%=job.JobTitle%></h5>
-                            <h6 class="jobDate">End Date: <%=job.EndDate%></h6>
+                            <%var date = new Date(job.EndDate);%>
+                            <h6 class="jobDate">End Date: <%=date.getDay()%> - <%=date.getMonth()%> - <%=date.getFullYear()%></h6>
                         </div>
                     </div>
                 </div>
