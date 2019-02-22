@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.social_tabs').addClass("hideEverything");
+      $('.news').addClass("hideEverything");
   $('.scrollButton').click(function () {
     scrollToLandingMenu();
   });
@@ -17,12 +18,26 @@ $('#new').click(function(){
   $('.social_tabs').removeClass("showEverything");
   $('.news').removeClass("hideEverything");
   $(".news").addClass("showEverything");
-  
+
   $('#new').css({"text-decoration": "underline"});
   $('#social').css({"text-decoration": "none"});
 });
+var firstScroll=true;
+$(window).scroll(function() {
+  if(firstScroll){
+   var hT = $('#newsStand').offset().top,
+       hH = $('#newsStand').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+       if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+         console.log("arrive");
+         firstScroll=false;
+         $('.news').addClass("showEverything");
 
 
+       }
+     }
+});
 
   var firstLoad = true;
   $(window).scroll(function () {

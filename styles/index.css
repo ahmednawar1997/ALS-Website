@@ -44,7 +44,7 @@
         opacity:0;
         height: 0;
         padding-top: 0px !important;
-        padding-bottom: 0px !important; 
+        padding-bottom: 0px !important;
         transition: all 0.5s 0.3s ease-in-out;
     }
 
@@ -52,7 +52,7 @@
     {
         opacity: 1;
         height: auto;
-        transition: all 0.5s 0.3s ease-in-out;
+        transition: all 0.7s 0.5s ease-in-out;
     }
 
     #image
@@ -146,7 +146,7 @@ cursor: pointer;
   font-size: 1.3vw;
 }
 .news{
-  padding-top: 30px;
+  padding-top: 0.8vw;
   padding-bottom: 50px;
   font-family: Helvetica;
   font-size: 0.9vw;
@@ -539,7 +539,7 @@ float: right;
 
     .image1{background-image: url("../resources/images/Layer-1.png");}
     .image2{background-image: url("../resources/images/Layer-2.png");}
-    .image3{background-image: url("../resources/images/Layer-3.png");}
+    .image3{background-image: url("../resources/images/Layer-5.png");}
     .image4{background-image: url("../resources/images/Layer-4.png");}
-    .image5{background-image: url("../resources/images/Layer-5.png");}
+    .image5{background-image: url("../resources/images/careera.jpg");}
     .image6{background-image: url("../resources/images/Layer-6.png");}
