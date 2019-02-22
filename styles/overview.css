@@ -17,13 +17,25 @@ body{
   background: transparent;
 }
 
-p{
-  font-size: 1vw;
-    line-height: 24px;
-    font-family: sourceSans;
-    font-weight: Normal;
-    font-style: Normal;
-    color: #5a5a5a;
+.d{
+  background-image: url("/resources/images/tiles.jpeg");
+  background-repeat: repeat;
+}
+
+#quotationMarks
+{
+    color: red;
+    font-size: 55px;
+
+}
+
+.a{
+  color: black;
+
+
+    font-size: 2.2vw;
+  font-family: "Lora" !important;
+     font-style: italic;
 }
 .s h3{
   color: red;
@@ -42,4 +54,22 @@ padding: 0;
 
     margin-left: auto;
     margin-right: auto;
+}
+.foot1{
+  background-image: url("../resources/images/footimg.jpg");
+  height: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.foot2{
+  background-image: url("../resources/images/students.jpg");
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+
 }
