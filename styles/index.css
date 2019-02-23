@@ -388,6 +388,37 @@ cursor: pointer;
     {
         padding: 0 10px;
     }
+
+    .mainStoryImg{
+      width: 100%;
+      height: 24.8vw;
+      background: url("../resources/images/Layer-6.png");
+      background-size: cover;
+    }
+    .smallStory1{
+      width:100%;
+      height: 9vw;
+    background: url("../resources/images/ab1.jpg");
+      background-size: cover;
+    }
+    .smallStory2{
+      width:100%;
+      height: 9vw;
+      background: url("../resources/images/ab2.jpg");
+      background-size: cover;
+    }
+    .smallStory3{
+      width:100%;
+      height: 9vw;
+        background: url("../resources/images/bookshelf.jpg");
+      background-size: cover;
+    }
+    .smallStory4{
+      width:100%;
+      height: 9vw;
+    background: url("../resources/images/ab3.jpg");
+      background-size: cover;
+    }
     .cardDate
     {
         padding-top: 10px;
