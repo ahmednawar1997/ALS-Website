@@ -1,541 +1,582 @@
-    html, body {
-        margin: 0;
-        height: 100%;
-    }
-    html, body { min-height: 100%; }
-    a {text-decoration: none;}
-
-    body{
-        color:white;
-
-        overflow-x: hidden;
-        font-family: 'Actor','Arial';
-        width: 100vw;
-    }
-    .row{
-        margin: 0 0 !important;
-    }
-
-    #takeATourButton:hover
-    {
-        transform: scale(1.2);
-        transition: all 0.3s 0.2s ease-in-out;
-    }
-    .ALSText h3{
-      font-size: 1.3vw;
-    }
-
-    .ALSText h4{
-      font-size: 1.2vw;
-    }
-
-    .ALSText h5{
-      font-size: 1.1vw;
-    }
-  #social{
-      cursor: pointer;
-    }
-    #new{
-          cursor: pointer;
-     }
-
-    .hideEverything
-    {
-        opacity:0;
-        height: 0;
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-        transition: all 0.5s 0.3s ease-in-out;
-    }
-
-    .showEverything
-    {
-        opacity: 1;
-        height: auto;
-        transition: all 0.7s 0.5s ease-in-out;
-    }
-
-    #image
-    {
-	background-image: url("../resources/images/schoolCampus.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 100vh !important;
-    }
-    .container-fluid{
-        padding:0;
-        /* height: 100%; */
-        /* min-height: 100%; */
-    }
-    #landingPage{
-        text-align: center;
-        padding: 5vh 0;
-    }
-
-    #landingPage button{
-        background-color: transparent;
-        border-color: white;
-        border-width: medium;
-        font-weight: bold;
-        color: white;
-        font-size:1.2vw;
-    }
-    #landingPage a{
-        background-color: transparent;
-        border-color: white;
-        border-width: medium;
-        font-weight: bold;
-        color: white;
-    }
-    #landingPage h1{
-        font-family: Century Schoolbook;
-        font-weight: bold;
-        font-size: 2.6vw;
-    }
-
-    #landingPage h4{
-        font-family: Century Schoolbook;
-        font-size: 1.5vw;
-        margin-bottom: 3%;
-    }
-    .paddingDiv{
-        height: inherit ;
-    }
-    #landingPage hr{
-        width:25%;
-        border-top: 2px solid #eee;
-        padding-bottom: 0;
-        margin-bottom: 10px;
-    }
-    .vision{
-        background-color: #df9f9f;
-
-    }
-.land3{
-  padding-top: 20px;
-
-  font-family: Monotype Corsiva Regular;
-}
-    .newsStand{
-  color: black;
-  padding-top: 10px;
-  background-image: url("/resources/images/tiles.jpeg");
-  background-repeat: repeat;
-
-    }
-.smallNews{
-  padding-left: 0px;
-  margin-left:0px;
-}
-.cursor{
-     cursor: pointer;
-}
-.mainStory{
-width: 80%;
-
-cursor: pointer;
+html,
+body {
+    margin: 0;
+    height: 100%;
 }
 
-.newsDate{
-  color: grey;
-  font-family: sans-serif;
-  font-size: 0.7vw;
-  margin-top: 2vw;
-}
-.card-title{
-  font-size: 1.3vw;
-}
-.news{
-  padding-top: 0.8vw;
-  padding-bottom: 50px;
-  font-family: Helvetica;
-  font-size: 0.9vw;
+html,
+body {
+    min-height: 100%;
 }
 
-    .paddingDiv .row{
-        height: 50%;
-        width: 100%;
-        margin: 0%;
-    }
+a {
+    text-decoration: none;
+}
 
-    .menuContainer{
-        height: 100%;
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        vertical-align: middle;
-        /* line-height: 300px; */
+body {
+    color: white;
 
-        font-size: 2vw;
-        color:white;
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
-        -o-transition: all .5s;
-        transition: all .5s;
-    }
+    overflow-x: hidden;
+    font-family: 'Actor', 'Arial';
+    width: 100vw;
+}
 
-    .menuContainer p{
-        position: relative;
-        top: -30px;
-    }
+.row {
+    margin: 0 0 !important;
+}
 
-    .buttonHeading{
-        font-weight: bold;
-        position: absolute;
-        height: 2em;
-        width: 100%;
-        top: 50%;
-        text-align: center;
-        height: 2em !important;
-    }
-    .container-fluid .paddingDiv .row{
-        overflow: hidden;
-    }
-    .menuContainer:hover{
-        -ms-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
-        font-size: 31px;
-        cursor: pointer;
-    }
-    .hiddenOverflow{
-        overflow: hidden;
-        padding: 0;
-    }
+#takeATourButton:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    border-color: #cccccc;
+}
 
-    .scrollButton {
+.ALSText h3 {
+    font-size: 1.3vw;
+}
 
-        /* background-color: White; */
-        border: none;
-        color: Black;
+.ALSText h4 {
+    font-size: 1.2vw;
+}
+
+.ALSText h5 {
+    font-size: 1.1vw;
+}
+
+#social {
+    cursor: pointer;
+}
+
+#new {
+    cursor: pointer;
+}
+
+.hideEverything {
+    opacity: 0;
+    height: 0;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    transition: all 0.5s 0.3s ease-in-out;
+}
+
+.showEverything {
+    opacity: 1;
+    height: auto;
+    transition: all 0.7s 0.5s ease-in-out;
+}
+
+#image {
+    background-image: url("../resources/images/schoolCampus.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh !important;
+}
+
+.container-fluid {
+    padding: 0;
+    /* height: 100%; */
+    /* min-height: 100%; */
+}
+
+#landingPage {
+    text-align: center;
+    padding: 5vh 0;
+}
+
+#landingPage button {
+    background-color: transparent;
+    border-color: white;
+    border-width: medium;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2vw;
+}
+
+#landingPage a {
+    background-color: transparent;
+    border-color: white;
+    border-width: medium;
+    font-weight: bold;
+    color: white;
+}
+
+#landingPage h1 {
+    font-family: Century Schoolbook;
+    font-weight: bold;
+    font-size: 2.6vw;
+}
+
+#landingPage h4 {
+    font-family: Century Schoolbook;
+    font-size: 1.5vw;
+    margin-bottom: 3%;
+}
+
+.paddingDiv {
+    height: inherit;
+}
+
+#landingPage hr {
+    width: 25%;
+    border-top: 2px solid #eee;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.vision {
+    background-color: #df9f9f;
+
+}
+
+.land3 {
+    padding-top: 20px;
+
+    font-family: Monotype Corsiva Regular;
+}
+
+.newsStand {
+    color: black;
+    padding-top: 10px;
+    background-image: url("/resources/images/tiles.jpeg");
+    background-repeat: repeat;
+
+}
+
+.smallNews {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.mainStory {
+    width: 80%;
+
+    cursor: pointer;
+}
+
+.newsDate {
+    color: grey;
+    font-family: sans-serif;
+    font-size: 0.7vw;
+    margin-top: 2vw;
+}
+
+.card-title {
+    font-size: 1.3vw;
+}
+
+.news {
+    padding-top: 0.8vw;
+    padding-bottom: 50px;
+    font-family: Helvetica;
+    font-size: 0.9vw;
+}
+
+.paddingDiv .row {
+    height: 50%;
+    width: 100%;
+    margin: 0%;
+}
+
+.menuContainer {
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 300px; */
+
+    font-size: 2vw;
+    color: white;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.menuContainer p {
+    position: relative;
+    top: -30px;
+}
+
+.buttonHeading {
+    font-weight: bold;
+    position: absolute;
+    height: 2em;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    height: 2em !important;
+}
+
+.container-fluid .paddingDiv .row {
+    overflow: hidden;
+}
+
+.menuContainer:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    font-size: 31px;
+    cursor: pointer;
+}
+
+.hiddenOverflow {
+    overflow: hidden;
+    padding: 0;
+}
+
+.scrollButton {
+
+    /* background-color: White; */
+    border: none;
+    color: Black;
 
 
-        text-decoration: none;
-        display: block;
+    text-decoration: none;
+    display: block;
 
-        cursor: pointer;
+    cursor: pointer;
 
-      text-align: center;
+    text-align: center;
 
 
-        font-size: 1.6vw;
-    }
-    .halfContent{
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      align-self: flex-end;
-      margin-right: auto;
-    }
-    .halfCircle{
-        position: absolute;
-        bottom: 0;
-        background-image: url("../resources/images/halfCircle.png");
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 12vw;
-        text-align: center;
-        width: 12vw;
-        transition: all .2s ease-in-out;
-        right: 15px;
-        left: 15px;
-    }
+    font-size: 1.6vw;
+}
 
-    .halfCircle:hover + .downArrow{
-        -ms-transform: scale(0.9);
-        -moz-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        -o-transform: scale(0.9);
-        transform: scale(0.9);
-        font-size: 31px;
-    }
+.halfContent {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    align-self: flex-end;
+    margin-right: auto;
+}
 
-    .halfCircle:hover {
-        -ms-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+.halfCircle {
+    position: absolute;
+    bottom: 0;
+    background-image: url("../resources/images/halfCircle.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 12vw;
+    text-align: center;
+    width: 12vw;
+    transition: all .2s ease-in-out;
+    right: 15px;
+    left: 15px;
+}
 
-    #landingPage .container{
-        right:15px;
-        left:15px;
-    }
+.halfCircle:hover+.downArrow {
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    font-size: 31px;
+}
 
-    .logo{
-        margin: auto;
-        width: 9vw;
-    }
+.halfCircle:hover {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
-    .redHeading{
-        color:#990000;
-        text-align: center;
-        margin: 0;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        font-size: 36px;
-        /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
-        font-weight: bold;
-    }
-    .indicators
-    {
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-        left: 0;
-        z-index: 15;
-        height: 20px;
-        background-color: #ffffff;
-        width: 10%;
-        height: 40px;
-        margin: auto;
-    }
-    .carouselText
-    {
-        color:black;
-        text-align: center;
-        background-image: url(../resources/images/quotesLayer.png);
-        opacity: 0.9;
-    }
-    .carousel-item p
-    {
-      color: black;
-        padding-top: 2%;
-        padding-left: 12%;
-        padding-right: 12%;
+#landingPage .container {
+    right: 15px;
+    left: 15px;
+}
+
+.logo {
+    margin: auto;
+    width: 9vw;
+}
+
+.redHeading {
+    color: #990000;
+    text-align: center;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 36px;
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+    font-weight: bold;
+}
+
+.indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    height: 20px;
+    background-color: #ffffff;
+    width: 10%;
+    height: 40px;
+    margin: auto;
+}
+
+.carouselText {
+    color: black;
+    text-align: center;
+    background-image: url(../resources/images/quotesLayer.png);
+    opacity: 0.9;
+}
+
+.carousel-item p {
+    color: black;
+    padding-top: 2%;
+    padding-left: 12%;
+    padding-right: 12%;
     line-height: 9vh;
-        font-size: 2.2vw;
-        font-family: Adobe,Devanagari,Italic;
-         font-style: italic;
+    font-size: 2.2vw;
+    font-family: Adobe, Devanagari, Italic;
+    font-style: italic;
 
-    }
-    #quotationMarks
-    {
-        color: red;
-        font-size: 55px;
+}
 
-    }
-    #quoteOwner
-    {
-        font-weight: 600;
-        padding: 0;
-        font-size: 2.5vw;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .carousel-indicators li
-    {
-        background-color: #6c757d99;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 5px;
-        margin-right: 10px;
-        border-radius: 100%;
-        width: 8px;
-        height: 8px;
+#quotationMarks {
+    color: red;
+    font-size: 55px;
 
-    }
-    .carousel-control-next-icon
-    {
-        background-image: url(../resources/images/forward.png);
-    }
-    .carousel-control-prev-icon
-    {
-        background-image: url(../resources/images/backward.png);
-    }
-    .carousel-item{
-        margin-bottom: 5%;
-    }
-    .carousel-indicators
-    {
-        position: unset;
-        height: 40px;
-        /* margin: auto; */
-    }
-    .carousel-indicators .active
-    {
-        background-color: #6c757d99;
-        width: 10px;
-        height: 10px;
-        padding: 4px;
-        border: 2px solid #178db89e;
-    }
+}
 
-    .card
-    {
-        border: 1px solid #42536d;
-        margin-left: 20px;
-        margin-right:0;
-        color: black;
+#quoteOwner {
+    font-weight: 600;
+    padding: 0;
+    font-size: 2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-    }
-    .card-small
-    {
-        border: 1px solid #42536d;
-        margin: 0 0px;
-        color: black;
-    }
-    .bottomCard
-    {
-        margin: 5px 0;
-    }
-    .card-body
-    {
-        padding: 0 10px;
-    }
+.carousel-indicators li {
+    background-color: #6c757d99;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
 
-    .mainStoryImg{
-      width: 100%;
-      height: 24.8vw;
-      background: url("../resources/images/Layer-6.png");
-      background-size: cover;
-    }
-    .smallStory1{
-      width:100%;
-      height: 9vw;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../resources/images/forward.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../resources/images/backward.png);
+}
+
+.carousel-item {
+    margin-bottom: 5%;
+}
+
+.carousel-indicators {
+    position: unset;
+    height: 40px;
+    /* margin: auto; */
+}
+
+.carousel-indicators .active {
+    background-color: #6c757d99;
+    width: 10px;
+    height: 10px;
+    padding: 4px;
+    border: 2px solid #178db89e;
+}
+
+.card {
+    border: 1px solid #42536d;
+    margin-left: 20px;
+    margin-right: 0;
+    color: black;
+
+}
+
+.card-small {
+    border: 1px solid #42536d;
+    margin: 0 0px;
+    color: black;
+}
+
+.bottomCard {
+    margin: 5px 0;
+}
+
+.card-body {
+    padding: 0 10px;
+}
+
+.mainStoryImg {
+    width: 100%;
+    height: 24.8vw;
+    background: url("../resources/images/Layer-6.png");
+    background-size: cover;
+}
+
+.smallStory1 {
+    width: 100%;
+    height: 9vw;
     background: url("../resources/images/ab1.jpg");
-      background-size: cover;
-    }
-    .smallStory2{
-      width:100%;
-      height: 9vw;
-      background: url("../resources/images/ab2.jpg");
-      background-size: cover;
-    }
-    .smallStory3{
-      width:100%;
-      height: 9vw;
-        background: url("../resources/images/bookshelf.jpg");
-      background-size: cover;
-    }
-    .smallStory4{
-      width:100%;
-      height: 9vw;
+    background-size: cover;
+}
+
+.smallStory2 {
+    width: 100%;
+    height: 9vw;
+    background: url("../resources/images/ab2.jpg");
+    background-size: cover;
+}
+
+.smallStory3 {
+    width: 100%;
+    height: 9vw;
+    background: url("../resources/images/bookshelf.jpg");
+    background-size: cover;
+}
+
+.smallStory4 {
+    width: 100%;
+    height: 9vw;
     background: url("../resources/images/ab3.jpg");
-      background-size: cover;
-    }
-    .cardDate
-    {
-        padding-top: 10px;
-        padding-left: 10px;
-        margin-bottom: 5px;
-        font-family: Helvetica;
-        font-size: 12px;
-        color:#75827f;
-    }
-    .smallContent
-    {
-        justify-content: center;
-        padding: 0 !important;
-    }
-    #removePadding
-    {
-        width: 100%;
-        padding: 0 !important;
-    }
-    .imageContainer
-    {
-        position: relative;
-    }
-    .text-block {
-        position: absolute;
-        bottom: 0px;
-        background: rgba(210, 216, 213 , 0.8);
-        color: black;
-        width: 100%;
-        padding-top: 10px;
-        padding-left: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-      }
-      .text-blocksmall
-      {
-        position: absolute;
-        bottom: 0px;
-        background: rgba(210, 216, 213 , 0.8);
-        color: black;
-        width: 100%;
-        padding-top: 5px;
-        padding-left: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      .text-blocksmall p
-      {
-          padding-top:5px;
-          margin-bottom: 0px !important;
-          padding-bottom: 5px;
-      }
-    .vision{
-        background-color: #e5e2e2;
-    }
-    .visionContent{
-        color: black;
-        text-align: center;
-        padding: 0 5% 4% 5%;
-        font-size: 29px;
-        margin: 0%;
-        /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+    background-size: cover;
+}
 
-    }
-    .eye{
-        text-align: center;
-        margin: auto;
-        color: #990000;
-    }
-    .mission{
-        background-color: #fafbfc;
-    }
-    .carouselHeading{
-        color: #42536d;
-        padding: 2%;
-    }
-    .item img{
-        max-height: 450px !important;
-    }
-    #newsFeed{
-        padding-bottom: 3%;
-        height: 90%;
-    }
-    .takeTourVideo{
-        display: block;
-        margin: auto;
-        width:70vw;
-        margin-bottom: 20px;
-        height:60vh;
-    }
+.cardDate {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: #75827f;
+}
 
-    .takeTourContainer{
-        margin-top: 8%;
-        position: absolute;
-        display: none;
-        z-index: 10;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-    .takeTourCloseBtn{
+.smallContent {
+    justify-content: center;
+    padding: 0 !important;
+}
 
-        display: block;
-        margin: auto;
-    }
+#removePadding {
+    width: 100%;
+    padding: 0 !important;
+}
 
-  .rightStand{
-float: right;
+.imageContainer {
+    position: relative;
+}
 
-  }
+.text-block {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(210, 216, 213, 0.8);
+    color: black;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
 
-  .leftStand{
+.text-blocksmall {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(210, 216, 213, 0.8);
+    color: black;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.text-blocksmall p {
+    padding-top: 5px;
+    margin-bottom: 0px !important;
+    padding-bottom: 5px;
+}
+
+.vision {
+    background-color: #e5e2e2;
+}
+
+.visionContent {
+    color: black;
+    text-align: center;
+    padding: 0 5% 4% 5%;
+    font-size: 29px;
+    margin: 0%;
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+
+}
+
+.eye {
+    text-align: center;
+    margin: auto;
+    color: #990000;
+}
+
+.mission {
+    background-color: #fafbfc;
+}
+
+.carouselHeading {
+    color: #42536d;
+    padding: 2%;
+}
+
+.item img {
+    max-height: 450px !important;
+}
+
+#newsFeed {
+    padding-bottom: 3%;
+    height: 90%;
+}
+
+.takeTourVideo {
+    display: block;
+    margin: auto;
+    width: 70vw;
+    margin-bottom: 20px;
+    height: 60vh;
+}
+
+.takeTourContainer {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.takeTourCloseBtn {
+
+    display: block;
+    margin: auto;
+}
+
+.rightStand {
+    float: right;
+
+}
+
+.leftStand {
     float: left;
-  }
+}
 
-  .foot1{
+.foot1 {
     background-image: url("../resources/images/footimg.jpg");
     height: 40%;
     background-size: cover;
@@ -544,8 +585,9 @@ float: right;
     background-attachment: fixed;
 
 
-  }
-  .footbut{
+}
+
+.footbut {
     border-radius: 50px !important;
     font-size: 18px !important;
     text-align: center;
@@ -556,21 +598,38 @@ float: right;
     background-color: #b80100 !important;
     color: #fff !important;
     margin-right: 20px;
-  }
+}
 
-    .blur{
-        filter: blur(4px);
-        -webkit-filter: blur(4px);
-        -moz-filter: blur(4px);
-        -o-filter: blur(4px);
-        -ms-filter: blur(4px);
-        background:rgba(0, 0, 0, 0.75);
-        background-blend-mode: darken;
-    }
+.blur {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.75);
+    background-blend-mode: darken;
+}
 
-    .image1{background-image: url("../resources/images/Layer-1.png");}
-    .image2{background-image: url("../resources/images/Layer-2.png");}
-    .image3{background-image: url("../resources/images/Layer-5.png");}
-    .image4{background-image: url("../resources/images/Layer-4.png");}
-    .image5{background-image: url("../resources/images/careera.jpg");}
-    .image6{background-image: url("../resources/images/Layer-6.png");}
+.image1 {
+    background-image: url("../resources/images/Layer-1.png");
+}
+
+.image2 {
+    background-image: url("../resources/images/Layer-2.png");
+}
+
+.image3 {
+    background-image: url("../resources/images/Layer-5.png");
+}
+
+.image4 {
+    background-image: url("../resources/images/Layer-4.png");
+}
+
+.image5 {
+    background-image: url("../resources/images/careera.jpg");
+}
+
+.image6 {
+    background-image: url("../resources/images/Layer-6.png");
+}
