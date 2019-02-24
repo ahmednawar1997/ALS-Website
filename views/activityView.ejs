@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <title>ALS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/template.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/activities.css" />
+  </head>
+
+  <body>
+    <div>
+      <%- include partials/navbar %>
+    </div>
+    <div class="compImage"></div>
+
+    <div class="container">
+      <h3>Join ALS on their adventure</h3>
+      <h5 class="quote">
+        “&nbsp;&nbsp;Everybody is a genius. But if you judge a fish by its
+        ability to climb a tree, it will live its whole life believing that it
+        is stupid.&nbsp;&nbsp;”<br />
+        ― Albert Einstein
+      </h5>
+      <hr />
+
+      <h5 class="actOpeningsTitle">Current copmetition</h5>
+
+      <div class="container">
+        <form
+          method="POST"
+          action="/admission-process"
+          enctype="multipart/form-data"
+        >
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="Name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="stdName"
+                placeholder="Full name"
+                required
+              />
+            </div>
+            <div class="form-group col">
+              <label for="year">Year</label>
+              <input
+                type="text"
+                class="form-control"
+                name="year"
+                id="stdYr"
+                placeholder="Grade 6"
+                required
+              />
+            </div>
+            <div class="form-group col">
+              <label for="className">Class Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="className"
+                id="stdClassName"
+                placeholder="Mexico"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="notes">Notes</label>
+              <textarea
+                type="text"
+                class="form-control"
+                name="notes"
+                placeholder="In this writing, I was trying to express ...."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-row ">
+            <div class="input-group col-md-4 ">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01"
+                  >Upload</span
+                >
+              </div>
+              <div class="custom-file">
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01"
+                />
+                <label class="custom-file-label" for="inputGroupFile01"
+                  >Choose file</label
+                >
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="form-row ">
+            <div class="form-group text-center col-md-4 offset-md-4">
+              <button type="submit" class="btn btn-success btn-block">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <%- include partials/footer %>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".actContainer").click(function() {
+        window.location = "/acts/" + $(this).attr("actId");
+      });
+    </script>
+  </body>
+</html>
