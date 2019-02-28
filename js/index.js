@@ -72,7 +72,7 @@ function scrollToLandingMenu() {
 
 $('#takeATourButton').click(function () {
   $('.takeTourContainer').css("display", "block");
-  $('#landingPage').attr("class", "blur");
+  $('#image').addClass("blur");
   $('body').css('overflow', 'hidden');
 
   $('.takeTourContainer iframe').prop("src", function () {
@@ -85,9 +85,9 @@ var iFrame = $('.takeTourContainer');
 
 function closeVideo() {
   $('.takeTourContainer').css("display", "none");
-  $('#landingPage').removeClass("blur");
+  $('#image').removeClass("blur");
   $('.takeTourContainer').remove();
-  $("#UserHomePage").append(iFrame);
+  $("body").append(iFrame);
   $('body').css('overflow-y', 'auto');
   $('body').css('overflow-x', 'hidden');
 };

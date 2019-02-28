@@ -11,7 +11,6 @@
     /* background-color: white; */
     padding: 40px; 
     border: 1px solid lightgrey;
-    transition: 1s;
     margin: 20px;
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, white 50%, #be0000 50%);
@@ -25,6 +24,10 @@
     cursor: pointer;
     color: white;
 }
+.jobContainer:hover>.jobDate{
+    background-color: rgba(211, 211, 211, 0.753);
+}
+
 .jobDate{
     background-color: lightgray;
     border-radius: 5px;
