@@ -82,4 +82,15 @@ router.get("/complaints", function (req, res) {
   res.render("complaints");
 });
 
+router.post("/complaints" , function(req , res){
+    const sql = "INSERT INTO Complaints (StudentFullName, PhoneNumber, email, Department, Grade, Subject, Message) VALUES (?,?,?,?,?,?,?)";
+    const inputData = [req.body.fullName, req.body.phoneNumber, req.body.email, req.body.department, req.body.grade, req.body.typeOfComplaint, req.body.message]
+   
+    con.query(sql , inputData, function(err , data)
+    {
+        if(err) console.log(err);
+        console.log(data);
+        res.render("complaints");
+    });
+});
 module.exports = router;

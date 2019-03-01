@@ -32,18 +32,18 @@
     <div class="container-fluid">
         <div class="form-style-10">
             <h1>Complaints<span>Tell us about your problem !</span></h1>
-            <form>
+            <form method="POST" action="/complaints">
                 <div class="section"><span>1</span>Personal Info</div>
                 <div class="inner-wrap">
-                    <label>Your Full Name <input type="text" name="field1" /></label>
-                    <label>Phone Number <input type="text"></label>
-                    <label>Email Address <input type="email" name="field3" /></label>
+                    <label>Your Full Name <input type="text" name="fullName" required/></label>
+                    <label>Phone Number <input type="text" name="phoneNumber"required/></label>
+                    <label>Email Address <input type="email" name="email" required/></label>
                 </div>
 
                 <div class="section"><span>2</span>School Department & type of complaint</div>
                 <div class="inner-wrap">              
-                    <label>Department<input type="text" name="field4" /></label>
-                    <label>Grade<input type="text" name="field4" /></label>
+                    <label>Department<input type="text" name="department" required/></label>
+                    <label>Grade<input type="text" name="grade" required/></label>
                     <label>Type of Complaint <select name="typeOfComplaint">
                         <option value="academic">Academic</option>
                         <option value="department">Department</option>
@@ -52,7 +52,7 @@
 
                 <div class="section"><span>3</span>Complaint</div>
                 <div class="inner-wrap">
-                    <label>Comlaint <textarea name="" id="" cols="30" rows="10"></textarea></label>
+                    <label>Complaint <textarea required cols="30" rows="10" name="message"></textarea></label>
                     
                 </div>
                 <div class="button-section">
