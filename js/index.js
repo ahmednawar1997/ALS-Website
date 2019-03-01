@@ -70,7 +70,14 @@ function scrollToLandingMenu() {
   }, 700);
 };
 
+function scrollToTop() {
+  $('html, body').animate({
+    scrollTop: $("#image").offset().top
+  }, 200);
+};
+
 $('#takeATourButton').click(function () {
+  scrollToTop();
   $('.takeTourContainer').css("display", "block");
   $('#image').addClass("blur");
   $('body').css('overflow', 'hidden');

@@ -110,4 +110,11 @@ router.post("/complaints", function(req, res) {
     res.render("complaints");
   });
 });
+
+
+router.get("/sloped", function(req, res) {
+  res.render("slopedNav");
+});
+
+
 module.exports = router;
