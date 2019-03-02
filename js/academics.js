@@ -33,18 +33,38 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $("#admissionButton").click(function () {
+  $("#MiddleButton").click(function () {
     $('#list-tab button').removeClass('active');
     $('#list-tab button').removeClass('btn-secondary');
     $('#list-tab button').addClass('btn-danger');
-    $('#admissionButton').removeClass('btn-danger');
-    $('#admissionButton').addClass('btn-secondary');
+    $('#MiddleButton').removeClass('btn-danger');
+    $('#MiddleButton').addClass('btn-secondary');
     $('#list-tab a').removeClass('active');
-    $("#admissionButton").addClass('active');
-    $('#requirementsTab').css("display", "none");
-    $('#applyNowTab').css("display", "none");
-    $('#admissionProcessTab').css("display", "block");
-    $('#pagingBar').text("Admission Process");
+    $("#MiddleButton").addClass('active');
+    $('#OverviewTab').css("display", "none");
+    $('#SeniorTab').css("display", "none");
+    $('#JuniorTab').css("display", "none");
+    $('#MiddleTab').css("display", "block");
+    $('#pagingBar').text("Junior");
+
+  });
+});
+
+
+$(document).ready(function () {
+  $("#SeniorButton").click(function () {
+    $('#list-tab button').removeClass('active');
+    $('#list-tab button').removeClass('btn-secondary');
+    $('#list-tab button').addClass('btn-danger');
+    $('#SeniorButton').removeClass('btn-danger');
+    $('#SeniorButton').addClass('btn-secondary');
+    $('#list-tab a').removeClass('active');
+    $("#SeniorButton").addClass('active');
+    $('#OverviewTab').css("display", "none");
+    $('#SeniorTab').css("display", "block");
+    $('#JuniorTab').css("display", "none");
+    $('#MiddleTab').css("display", "none");
+    $('#pagingBar').text("Junior");
 
   });
 });
