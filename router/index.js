@@ -24,6 +24,8 @@ router.get("/activity/:id", function(req, res) {
   res.render("activityView");
 });
 
+
+
 router.get("/jobs", function(req, res) {
   let sql = "SELECT * FROM Jobs";
   con.query(sql, function(err, jobs) {
@@ -111,6 +113,9 @@ router.post("/complaints", function(req, res) {
   });
 });
 
+router.get("/resource", function(req, res) {
+  res.render("resource");
+});
 
 router.get("/sloped", function(req, res) {
   res.render("slopedNav");
