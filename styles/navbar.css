@@ -6,6 +6,7 @@
 	background-color:#ffffff;
 	text-align: left;
 	border-bottom: 2px solid red;
+	z-index: 3
 }
 
 .navbar-activeitem
