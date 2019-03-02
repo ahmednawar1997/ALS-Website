@@ -177,3 +177,15 @@ body
 .tabs button{
   height: 60px;
 }
+
+.holds-the-iframe{
+	background:url(/resources/images/ajax-loader.gif) center center no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
