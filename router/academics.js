@@ -1,9 +1,12 @@
-var express = require("express");
-var router  = express.Router();
-
+const router = require("express").Router();
 
 router.get("/academics", function(req, res) {
-    res.render("academics");
-  });
+  res.render("academics");
+});
 
-  module.exports = router;
+module.exports = {
+  name: "binder",
+  executer: function(app) {
+    app.use("/", router);
+  }
+};

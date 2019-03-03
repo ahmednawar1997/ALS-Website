@@ -1,5 +1,4 @@
-var express = require("express");
-var router = express.Router();
+const router = require("express").Router();
 var con = require("../db/connection");
 var upload = require("../helpers/multerConfig");
 
@@ -23,8 +22,6 @@ router.post("/survey", function(req, res) {
 router.get("/activity/:id", function(req, res) {
   res.render("activityView");
 });
-
-
 
 router.get("/jobs", function(req, res) {
   let sql = "SELECT * FROM Jobs";
@@ -121,5 +118,9 @@ router.get("/sloped", function(req, res) {
   res.render("slopedNav");
 });
 
-
-module.exports = router;
+module.exports = {
+  name: "binder",
+  executer: function(app) {
+    app.use("/", router);
+  }
+};

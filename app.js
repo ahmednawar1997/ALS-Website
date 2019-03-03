@@ -5,7 +5,6 @@ const http = require("http");
 
 // Requiring Packages - End
 
-
 // var DB = require("./db/connection");
 
 // configure app
@@ -27,26 +26,28 @@ app.use(bodyParser.json()); // Parse to json object
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/"));
 
-
 // Website Routes
 // Routers
-app.use(require("./router/index"));
-app.use(require("./router/academics"));
-app.use(require("./router/admission"));
-app.use(require("./router/gallery"));
-app.use(require("./router/contact-us"));
-app.use(require("./router/admin"));
+require("fs")
+  .readdirSync("./router")
+  .map(file => {
+    const routerBinder = require("./router/" + file);
 
-
+    // some magic is the .stack part just to validate that the router wasnt exported
+    if (routerBinder.name === "binder") {
+      routerBinder.executer(app);
+    } else
+      throw file + " must be exported as object with name and function(app)";
+  });
 
 // template page
-app.get("/template", function (req, res) {
+app.get("/template", function(req, res) {
   res.render("template");
 });
 
 // 404
 // =============================================================================
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
   res.status(404).send({
     error: "404-Not found"
   });
@@ -54,17 +55,15 @@ app.use(function (req, res, next) {
 
 // Error
 // =============================================================================
-app.use(function (err, _req, res, _next) {
+app.use(function(err, _req, res, _next) {
   // TBD - for our own Error code handling
 });
 
-
 var server = http.createServer(app);
 
-server.listen(40000, function () {
+server.listen(40000, function() {
   console.log("Server is running...");
 });
-
 
 function normalizePort(val) {
   var port = parseInt(val, 10);
