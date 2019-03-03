@@ -1,10 +1,10 @@
 var mysql = require("mysql");
 
 var con = mysql.createConnection({
-  host: "tempals.com",
-  user: "tempalsc_team",
-  password: "root123",
-  database: "tempalsc_ALS",
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "ALS",
   port: 3306
 });
 con.connect(function (err) {
