@@ -26,7 +26,7 @@ body {
 }
 
 #takeATourButton:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: all 0.3s ease-in-out;
     border-color: #cccccc;
 }
@@ -400,6 +400,11 @@ body {
     margin-left: 20px;
     margin-right: 0;
     color: black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.4s 0.3s ease-in-out;
 
 }
 
