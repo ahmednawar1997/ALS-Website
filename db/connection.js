@@ -3,7 +3,7 @@ var mysql = require("mysql");
 var con = mysql.createPool({
   host: "167.99.46.128",
   user: "root",
-  password: "", // you need to add password to login to DB or use local
+  password: "PASSWORD", // you need to add password to login to DB or use local
   database: "ALS",
   port: 3306
 });
